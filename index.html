@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlayerGamer</title>
+    <link rel="stylesheet" href="./CSS/estilos.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <section class="nav__contenedor contenedor">
+          <figure class="nav__logo">
+            <h2 class="nav__titulo">PlayerGamer</h2>
+          </figure>
+
+          <div class="nav__links">
+            <a href="#" class="nav__link">Inicio</a>
+            <a href="#" class="nav__link">Producto</a>
+            <a href="#" class="nav__link">Contacto</a>
+            <a href="#" class="nav__link nav__link--boton">Iniciar Sesión</a>
+            <a href="#" class="nav__link nav__link--boton">Registro</a>
+          </div>
+        </section>
+      </nav>
+
+      <section class="hero__main contenedor">
+        <div class="hero__textos">
+          <h1 class="hero__titulo">"Si ya acabaste el juego, vendelo"</h1>
+          <p class="hero__paragrafo">
+            Los videojuegos han crecido, estamos listos para aceptar historias
+            maduras como los libros y peliculas
+          </p>
+          <form action="/action_page.php" class="hero__form">
+            <label for="BuscarJuego" class="hero__buscar">Buscar:</label>
+            <input
+              class="hero__search"
+              type="search"
+              id="BuscarJuego"
+              name="BuscarJuego"
+              placeholder="Videojuego..."
+            />
+            <input type="submit" class="hero__boton" />
+          </form>
+        </div>
+
+        <figure class="hero__picture">
+          <img src="ilustracion.svg" class="hero__img" />
+        </figure>
+      </section>
+    </header>
+  </body>
+</html>

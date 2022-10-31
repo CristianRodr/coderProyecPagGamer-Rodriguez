@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f2f2;
+}
+
+.hero {
+  background: #283048; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #859398,
+    #283048
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #859398,
+    #283048
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.nav {
+  /* background: #ff4365; */
+  height: 70px;
+  color: #fff;
+}
+
+.nav__contenedor {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+/* -----seccion hero main ----- */
+
+.hero__main {
+  display: flex;
+  height: calc(100vh - 70px);
+  align-items: center;
+  min-height: 600px;
+}
+
+.hero__textos {
+  flex: 1;
+}
+
+.hero__picture {
+  flex: 1;
+}
+
+.hero__img {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero__titulo {
+  text-align: center;
+  font-size: 4rem;
+  color: #fcff6c;
+}
+
+.hero__paragrafo {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+}
+
+.hero__form {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.hero__search {
+  margin-top: 1.5rem;
+  margin-right: 0.5rem;
+  padding: 5px;
+}
+
+.hero__buscar {
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.hero__boton {
+  font-weight: 700;
+  padding: 5px 10px;
+  background: #fcff6c;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 2px solid #f2f2f2;
+}
+
+.hero__boton:hover {
+  color: #f2fdfc;
+  background: #00d9c0;
+}
