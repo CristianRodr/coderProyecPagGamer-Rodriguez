@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero__picture {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 0 auto;
+}
+
+.layout__picture {
+  width: 30%;
+  height: 250px;
+  margin-bottom: 20px;
+  display: block;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(27, 29, 1, 0.579);
+}
+
+/* footer */
+.footer {
+  background: #283048; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #859398,
+    #283048
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #859398,
+    #283048
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  text-align: center;
+}
+
+.footer__container {
+  --color-primary: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__texts {
+  width: 50%;
+}
+
+.footer__icon {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 30px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.footer__icon.fab {
+  line-height: 60px;
+}
+
+.footer__icon:hover {
+  background: #fff;
+  color: #f77062;
+  cursor: pointer;
+}
+
+.footer__link {
+  display: inline-block;
+  color: #fff;
+  margin: 0 20px;
+  margin-bottom: 15px;
+}
+
+.footer__link:hover {
+  text-decoration: none;
+}
+
+.footer__img {
+  margin: 0;
+  width: 35%;
+}
+
+.footer__picture {
+  width: 90%;
+}
