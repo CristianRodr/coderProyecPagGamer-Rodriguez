@@ -4,12 +4,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 3px solid red;
+  /* outline: 3px solid red; */
+}
+
+:root {
+  --color-primario: #fcff6c;
+  --color-secundario: #f4f4ed;
+  --color-terciario: #1b1b1e;
+  --color-blanco: #ffffff;
+  --box-shadow-principal: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #f2f2f2;
+  background: var(--color-blanco);
 }
 
 .hero {
@@ -33,10 +42,12 @@ body {
   margin: 0 auto;
 }
 
+/* ------------------- seccion menu ------------------- */
+
 .nav {
   /* background: #ff4365; */
   height: 70px;
-  color: #fff;
+  color: var(--color-blanco);
 }
 
 .nav__contenedor {
@@ -46,8 +57,12 @@ body {
   align-items: center;
 }
 
+.nav__titulo {
+  color: var(--color-blanco);
+}
+
 .nav__link {
-  color: #fff;
+  color: var(--color-blanco);
   text-decoration: none;
   margin-left: 1em;
 }
@@ -55,19 +70,25 @@ body {
 .nav__link--boton {
   font-weight: 700;
   padding: 5px 10px;
-  background: #fcff6c;
+  background: var(--color-primario);
   border: none;
-  border-radius: 15px;
+  border-radius: 30px;
   cursor: pointer;
-  border: 2px solid #f2f2f2;
+  border: 2px solid var(--color-primario);
   color: #283048;
 }
 
-/* -----seccion hero main ----- */
+.nav__link--boton:hover {
+  color: var(--color-blanco);
+  background: #3dfaff;
+  border: 2px solid var(--color-blanco);
+}
+
+/* -----------------seccion hero main ------------------ */
 
 .hero__main {
   display: flex;
-  height: 90vh;
+  height: 93vh;
   align-items: center;
   min-height: 600px;
 }
@@ -90,13 +111,13 @@ body {
 .hero__titulo {
   text-align: center;
   font-size: 4rem;
-  color: #fcff6c;
+  color: var(--color-primario);
 }
 
 .hero__paragrafo {
   font-size: 1.5rem;
   font-weight: 300;
-  color: #fff;
+  color: var(--color-blanco);
   text-align: center;
 }
 
@@ -116,7 +137,7 @@ body {
   font-weight: 700;
   font-size: 1.2rem;
   padding: 10px;
-  color: #fff;
+  color: var(--color-blanco);
 }
 
 .hero__boton {
@@ -124,26 +145,29 @@ body {
   font-size: 1rem;
   font-weight: 700;
   padding: 5px 10px;
-  background: #fcff6c;
+  background: var(--color-primario);
   border: none;
-  border-radius: 15px;
+  border-radius: 30px;
   cursor: pointer;
-  border: 2px solid #f2f2f2;
+  border: 2px solid var(--color-primario);
 }
 
 .hero__boton:hover {
-  color: #f2fdfc;
-  background: #00d9c0;
+  color: var(--color-blanco);
+  background: #3dfaff;
+  border: 2px solid var(--color-blanco);
 }
 
-/*------- main ------- */
+/*----------------------- close main ------------------------- */
 
-/* -------about------ */
-.about__control {
+/* ------------------------- about ------------------------- */
+.about {
+  background: #fffcf2;
+  padding: 70px 0;
 }
 
 .about__secciones {
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -155,8 +179,21 @@ body {
 }
 
 .about__titulo {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 4rem;
+  text-align: left;
+  color: var(--color-terciario);
+}
+
+.about__subtitulo {
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+  color: var(--color-terciario);
+}
+
+.about__text {
+  margin-bottom: 20px;
+  color: var(--color-terciario);
+  text-align: justify;
 }
 
 .about__img1 {
@@ -165,21 +202,47 @@ body {
   height: 200px;
   background-size: cover;
   border-radius: 50%;
+  box-shadow: var(--box-shadow-principal);
 }
 
-/* ------gallery ------ */
+.about__picture {
+  margin-bottom: 30px;
+}
+
+.about__cta {
+  text-decoration: none;
+  color: #283048;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 3px 12px;
+  background: #72ddf7;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid #72ddf7;
+}
+
+.about__cta:hover {
+  color: var(--color-blanco);
+  background: #3dfaff;
+  border: 2px solid #3dfaff;
+}
+/* ---------------------- close about ------------------------- */
+
+/* ----------------------- gallery ---------------------------- */
 
 .gallery {
-  background: #8e9eab; /* fallback for old browsers */
+  padding: 70px 0;
+  background: #f0f2f0; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to left,
-    #eef2f3,
-    #8e9eab
+    to right,
+    #000c40,
+    #f0f2f0
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to left,
-    #eef2f3,
-    #8e9eab
+    to right,
+    #000c40,
+    #f0f2f0
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -190,8 +253,8 @@ body {
 
 .gallery__title {
   text-align: center;
-  font-size: 2rem;
-  margin-top: 40px;
+  font-size: 4rem;
+  margin-bottom: 70px;
 }
 
 .gallery__contenedor {
@@ -204,15 +267,18 @@ body {
 
 .gallery__picture {
   width: 30%;
-  height: 250px;
+  height: 450px;
   margin-bottom: 20px;
   display: block;
   border-radius: 5px;
   object-fit: cover;
   box-shadow: 0 0 12px rgba(27, 29, 1, 0.579);
+  box-shadow: var(--box-shadow-principal);
 }
 
-/* ------ portafolio ------ */
+/* ----------------- close gallery ---------------------- */
+
+/* -------------------- portafolio --------------------- */
 
 .portfolio__control {
   margin-top: 70px;
@@ -296,8 +362,9 @@ body {
   font-weight: 300;
   text-decoration: none;
 }
+/* ----------------- close portafolio------------------ */
 
-/* -----layouts------- */
+/* ------------------- layouts --------------------- */
 
 .layouts {
   margin-top: 40px;
@@ -328,19 +395,39 @@ figure.layouts__picture {
   margin: 50px;
   width: 85%;
   background-size: cover;
+  box-shadow: var(--box-shadow-principal);
 }
 
 .layouts__title {
   font-size: 3.5rem;
-  padding-bottom: 15px;
 }
 
 .layouts__paragrafo {
   font-size: 1rem;
-  margin-bottom: 15px;
+  margin: 25px 0;
 }
 
-/* footer */
+.layouts__cta {
+  text-decoration: none;
+  color: var(--color-secundario);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 3px 12px;
+  background: #087ca7;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid #087ca7;
+}
+
+.layouts__cta:hover {
+  color: var(--color-blanco);
+  background: #3dfaff;
+  border: 2px solid #3dfaff;
+}
+
+/* ------------------  footer ---------------------------- */
+
 .footer {
   background: #283048; /* fallback for old browsers */
   background: -webkit-linear-gradient(
