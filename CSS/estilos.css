@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gothic+A1:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -17,6 +17,8 @@
 }
 
 body {
+  font-family: "Fredoka One", cursive;
+  font-family: "Gothic A1", sans-serif;
   font-family: "Poppins", sans-serif;
   background: var(--color-blanco);
 }
@@ -45,9 +47,17 @@ body {
 /* ------------------- seccion menu ------------------- */
 
 .nav {
-  /* background: #ff4365; */
   height: 70px;
   color: var(--color-blanco);
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+.hero__picture {
+  width: 40px;
+  margin-right: 7px;
 }
 
 .nav__contenedor {
@@ -185,6 +195,7 @@ body {
 }
 
 .about__subtitulo {
+  font-family: "Fredoka One", cursive;
   font-size: 1.5rem;
   padding-bottom: 15px;
   color: var(--color-terciario);
@@ -255,6 +266,14 @@ body {
   text-align: center;
   font-size: 4rem;
   margin-bottom: 70px;
+}
+
+.gallery__comentario {
+  font-family: "Gothic A1", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  word-spacing: 2px;
 }
 
 .gallery__contenedor {
