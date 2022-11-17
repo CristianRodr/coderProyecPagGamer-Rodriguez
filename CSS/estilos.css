@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 3px solid red;
 }
 
 body {
@@ -30,7 +31,6 @@ body {
   max-width: 1200px;
   overflow: hidden;
   margin: 0 auto;
-  padding: 80px 0;
 }
 
 .nav {
@@ -67,7 +67,7 @@ body {
 
 .hero__main {
   display: flex;
-  height: calc(100vh - 70px);
+  height: 90vh;
   align-items: center;
   min-height: 600px;
 }
@@ -140,11 +140,23 @@ body {
 
 /* -------about------ */
 .about__control {
-  margin-top: 70px;
+}
+
+.about__secciones {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.about__seller {
+  width: 90%;
+  max-width: 550px;
 }
 
 .about__titulo {
   font-size: 2rem;
+  text-align: center;
 }
 
 .about__img1 {
