@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fredoka+One&family=Gothic+A1:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     /* outline: 3px solid red; */
 }
 
@@ -244,7 +241,7 @@ body {
 /* ----------------------- gallery ---------------------------- */
 
 .gallery {
-    padding: 70px 0;
+    padding: 30px 0;
     background: #f0f2f0; /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to right,
@@ -266,7 +263,7 @@ body {
 .gallery__title {
     text-align: center;
     font-size: 4rem;
-    margin-bottom: 70px;
+    margin-bottom: 7px;
 }
 
 .gallery__game {
@@ -282,6 +279,7 @@ body {
     letter-spacing: 2px;
     word-spacing: 2px;
     font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .gallery__contenedor {
@@ -319,91 +317,59 @@ body {
 
 /* -------------------- portafolio --------------------- */
 
-.portfolio__control {
-    margin-top: 70px;
+.portfolio {
+    margin: 80px 0;
+}
+.portafolio__grid {
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center;
 }
 
-.portfolio__title {
-    text-align: center;
-    font-size: 2rem;
-}
-
-.portfolio__cards {
-    display: flex;
-    padding: 40px 0;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.portfolio__cards {
-    display: flex;
-    padding: 40px 0;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.portfolio__card {
-    width: 27%;
+.portafolio__informacion {
+    height: 550px;
+    padding: 10px;
+    grid-area: 1/1/4/4;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
     background: #fff;
-    height: auto;
-    box-shadow: 0 0 12px rgba(27, 29, 1, 0.579);
+    box-shadow: 6px 6px 13px -1px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
 }
 
-.portfolio__picture {
-    width: 100%;
-    display: block;
-    border-radius: 10px 10px 0 0;
-    height: 200px;
-    object-fit: cover;
+.portafolio__title {
+    padding: 10px;
+    font-size: 2rem;
+    letter-spacing: 2px;
 }
 
-.portfolio__cta {
-    display: block;
-    background: #d7f81e;
-    padding: 15px 0;
-    border-radius: 30px;
-    text-align: center;
-    color: #fff;
+.portafolio__paragrafo {
+    font-family: 'Gothic A1', sans-serif;
     font-weight: 300;
-    text-decoration: none;
+    padding: 10px;
+    text-align: justify;
 }
 
-.portfolio__texts {
-    padding: 30px 20px 40px 20px;
+.portafolio__picture {
+    width: 183px;
+    height: 122px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 7px;
 }
 
-.portfolio__pragraph {
-    font-weight: 300;
-    margin: 30px 0;
-}
-
-.portfolio__subtitle {
-    font-size: 1.5rem;
+.portafolio__name {
+    font-family: 'Dancing Script', cursive;
     text-align: center;
-    color: #d7f81e;
-    margin: 0;
-}
-
-.portfolio__paragrafo {
-    font-weight: 700;
-    text-align: center;
-    margin: 40px 0;
-}
-
-.portfolio__cta {
-    display: block;
-    background: #d7f81e;
-    padding: 15px 0;
-    border-radius: 30px;
-    text-align: center;
-    color: #fff;
-    font-weight: 300;
-    text-decoration: none;
 }
 /* ----------------- close portafolio------------------ */
 
-/* ------------------- layouts --------------------- */
+/* ------------------- layouts ---------------------  */
 
 .layouts {
     margin-top: 40px;
@@ -464,6 +430,62 @@ figure.layouts__picture {
     background: #3dfaff;
     border: 2px solid #3dfaff;
 }
+
+/* ------------------- close layouts --------------------- */
+
+/* ------------------- opinion --------------------- */
+
+.opinion__contenedor {
+    width: 100%;
+    height: 100%;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.opinion__control {
+    display: flex;
+    align-items: center;
+}
+
+.opinion {
+    margin: 70px;
+}
+
+.opinion__title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.opinion__caption {
+    font-size: 1.5rem;
+}
+
+.opinion__img {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.opinion__mensaje {
+    padding: 30px;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.opinion__paragrafo {
+    padding-top: 10px;
+}
+
+/* ------------------- close opinion --------------------- */
 
 /* ------------------  footer ---------------------------- */
 
