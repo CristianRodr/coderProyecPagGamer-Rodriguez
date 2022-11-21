@@ -524,7 +524,6 @@ figure.layouts__picture {
 }
 
 .noticias__img {
-  background-image: url(/img/callNoti.jpg);
   width: 100%;
   height: 100%;
   background-position: center;
@@ -534,7 +533,7 @@ figure.layouts__picture {
 }
 
 .noticias__imagenUno {
-  background-image: url(/img/warzoneNoti.jpg);
+  background-image: url("/img/warzoneNoti.jpg");
   width: 60em;
   height: 100%;
   background-position: center;
@@ -543,7 +542,7 @@ figure.layouts__picture {
 }
 
 .noticias__imagenDos {
-  background-image: url(/img/grandNoti.jpg);
+  background-image: url("/img/grandNoti.jpg");
   width: 60em;
   height: 100%;
   background-position: center;
@@ -552,7 +551,7 @@ figure.layouts__picture {
 }
 
 .noticias__imagenTres {
-  background-image: url(/img/witcherNoti.jpg);
+  background-image: url("/img/witcherNoti.jpg");
   width: 60em;
   height: 100%;
   background-position: center;
