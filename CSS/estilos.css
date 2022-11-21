@@ -527,6 +527,14 @@ figure.layouts__picture {
   border-radius: 7px;
 }
 
+.noticias__imagen {
+  width: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 7px;
+}
+
 .noticias__subtitulo {
   padding-bottom: 15px;
 }
@@ -540,17 +548,21 @@ figure.layouts__picture {
 }
 
 .notiUno {
-  background: #3dfaff;
+  border: 1px solid black;
   grid-area: notiUno;
 }
 
+.noticias__informacion {
+  display: flex;
+}
+
 .notiDos {
-  background: #087ca7;
+  border: 1px solid black;
   grid-area: notiDos;
 }
 
 .notiTres {
-  background: #f77062;
+  border: 1px solid black;
   grid-area: notiTres;
 }
 
