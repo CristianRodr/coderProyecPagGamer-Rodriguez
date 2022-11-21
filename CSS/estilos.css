@@ -298,12 +298,10 @@ body {
   display: block;
   border-radius: 5px;
   object-fit: cover;
-  box-shadow: 0 0 12px rgba(27, 29, 1, 0.579);
   box-shadow: var(--box-shadow-principal);
 }
 
 .gallery__redes {
-  display: block;
   display: flex;
   justify-content: space-between;
 }
@@ -422,7 +420,6 @@ figure.layouts__picture {
   font-weight: 700;
   padding: 3px 12px;
   background: #087ca7;
-  border: none;
   border-radius: 30px;
   cursor: pointer;
   border: 2px solid #087ca7;
@@ -533,7 +530,7 @@ figure.layouts__picture {
 }
 
 .noticias__imagenUno {
-  background-image: url("/img/warzoneNoti.jpg");
+  background-image: url("../img/warzoneNoti.jpg");
   width: 60em;
   height: 100%;
   background-position: center;
@@ -542,7 +539,7 @@ figure.layouts__picture {
 }
 
 .noticias__imagenDos {
-  background-image: url("/img/grandNoti.jpg");
+  background-image: url("../img/grandNoti.jpg");
   width: 60em;
   height: 100%;
   background-position: center;
@@ -551,7 +548,7 @@ figure.layouts__picture {
 }
 
 .noticias__imagenTres {
-  background-image: url("/img/witcherNoti.jpg");
+  background-image: url("../img/witcherNoti.jpg");
   width: 60em;
   height: 100%;
   background-position: center;
