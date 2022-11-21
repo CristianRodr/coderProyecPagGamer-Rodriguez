@@ -499,13 +499,13 @@ figure.layouts__picture {
 /* ------------------- Noticias --------------------- */
 
 .noticias {
-  height: 77vh;
+  padding: 70px 0;
   background: #fefdff;
 }
 
 .noticias__titulo {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
