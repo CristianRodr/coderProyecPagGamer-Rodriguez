@@ -270,3 +270,82 @@ body {
   grid-area: card9;
   height: 600px;
 }
+
+/* --------------- close protafolio ----------- */
+
+/* ------------------- footer ---------------- */
+
+.footer {
+  background: #283048; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #fefdff,
+    #283048
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #fefdff,
+    #283048
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.footer__container {
+  --color-primary: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__texts {
+  width: 50%;
+}
+
+.footer__icon {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 30px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.footer__icon.fab {
+  line-height: 60px;
+}
+
+.footer__icon:hover {
+  background: #fff;
+  color: #3dfaff;
+  cursor: pointer;
+}
+
+.footer__link {
+  display: inline-block;
+  color: #fff;
+  margin: 0 20px;
+  margin-bottom: 30px;
+}
+
+.footer__link:hover {
+  text-decoration: none;
+}
+
+.footer__img {
+  margin: 0;
+  width: 35%;
+}
+
+.footer__picture {
+  margin-top: 30px;
+  width: 90%;
+}
