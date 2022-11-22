@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/producto.css" />
     <title>Producto</title>
+    <link rel="stylesheet" href="../CSS/producto.css" />
+    <link rel="stylesheet" href="/normalize.css" />
   </head>
+
   <body>
     <header class="hero">
       <nav class="nav">
         <section class="nav__contenedor contenedor">
           <figure class="nav__logo">
+            <img src="../img/bx-game.svg" class="hero__picture" />
             <h2 class="nav__titulo">PlayerGamer</h2>
           </figure>
 
           <div class="nav__links">
-            <a href="#" class="nav__link">Inicio</a>
-            <a href="#" class="nav__link">Producto</a>
-            <a href="#" class="nav__link">Contacto</a>
+            <a href="/index.html" class="nav__link">Inicio</a>
+            <a href="/pages/producto.html" class="nav__link">Producto</a>
+            <a href="/pages/servicios.html" class="nav__link">servicios</a>
             <a href="#" class="nav__link nav__link--boton">Iniciar Sesión</a>
             <a href="#" class="nav__link nav__link--boton">Registro</a>
           </div>
@@ -26,173 +29,180 @@
       </nav>
 
       <section class="hero__main contenedor">
-        <div>
+        <div class="hero__wave" style="height: 150px; overflow: hidden">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%"
+          >
+            <path
+              d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+              style="stroke: none; fill: #fff"
+            ></path>
+          </svg>
+        </div>
+        <div class="hero__texts">
           <h1 class="hero__titulo">
-            Lorem ipsum dolor sit amet consectetur adipisicing
+            llevate todo lo que quieras al mejor precio
           </h1>
           <p class="hero__paragrafo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non
-            dicta cumque explicabo dolor aspernatur voluptatum doloribus nostrum
-            consequatur unde?
+            Hazlo, y si te da miedo, hazlo con miedo.
           </p>
-          <a href="#" class="hero__cta">Lorem ipsum.</a>
+          <form action="/action_page.php" class="hero__form">
+            <input
+              class="hero__search"
+              type="search"
+              id="BuscarJuego"
+              name="BuscarJuego"
+              placeholder="Buscar..."
+            />
+            <input type="submit" class="hero__boton" />
+          </form>
         </div>
-        <figure class="hero__img">
-          <img src="../img/img13.jpg" class="hero__picture" alt="Imagen Hero" />
-        </figure>
       </section>
     </header>
 
     <main class="main">
-      <section class="layout__producto">
-        <div>
-          <figure class="layout__img">
-            <img src="../img/gamer1.jpg" class="layout__picture" />
+      <div class="portafolio__grid contenedor">
+        <div class="portafolio__card card1">
+          <figure class="portafolio__picture">
+            <img src="../img/card1.jpg" class="portafolio__img" />
           </figure>
-          <p class="layout__paragrafo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ullam
-            voluptatum eaque iure perspiciatis id itaque facere odit quia
-            explicabo.
-          </p>
-          <a href="#" class="hero__cta">Lorem ipsum.</a>
+          <div class="portafolio__texts">
+            <div>
+              <h2>Call of Duty Cold</h2>
+              <p class="precio"><span class="moneda">$</span>30</p>
+              <h4 class="text">precio</h4>
+            </div>
+            <div>
+              <a class="fa-solid fa-sack-dollar"> Compra</a>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <figure class="layout__img">
-            <img src="../img/gamer2.jpg" class="layout__picture" />
+        <div class="portafolio__card card2">
+          <figure class="portafolio__picture">
+            <img src="../img/card2.jpg" class="portafolio__img" />
           </figure>
-          <p class="layout__paragrafo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ullam
-            voluptatum eaque iure perspiciatis id itaque facere odit quia
-            explicabo.
-          </p>
-          <a href="#" class="hero__cta">Lorem ipsum.</a>
+          <div class="portafolio__texts">
+            <div>
+              <h2>Death Stranding</h2>
+              <p class="precio"><span class="moneda">$</span>30</p>
+              <h4 class="text">precio</h4>
+            </div>
+            <div>
+              <a class="fa-solid fa-sack-dollar"> Compra</a>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <figure class="layout__img">
-            <img src="../img/gamer3.jpg" class="layout__picture" />
+        <div class="portafolio__card card3">
+          <figure class="portafolio__picture">
+            <img src="../img/card3.jpg" class="portafolio__img" />
           </figure>
-          <p class="layout__paragrafo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ullam
-            voluptatum eaque iure perspiciatis id itaque facere odit quia
-            explicabo.
-          </p>
-          <a href="#" class="hero__cta">Lorem ipsum.</a>
+          <div class="portafolio__texts">
+            <div>
+              <h2>Days Gone</h2>
+              <p class="precio"><span class="moneda">$</span>30</p>
+              <h4 class="text">precio</h4>
+            </div>
+            <div>
+              <a class="fa-solid fa-sack-dollar"> Compra</a>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <figure class="layout__img">
-            <img src="../img/img1.jpg" class="layout__picture" />
+        <div class="portafolio__card card4">
+          <figure class="portafolio__picture">
+            <img src="../img/card4.jpg" class="portafolio__img" />
           </figure>
-          <p class="layout__paragrafo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ullam
-            voluptatum eaque iure perspiciatis id itaque facere odit quia
-            explicabo.
-          </p>
-          <a href="#" class="hero__cta">Lorem ipsum.</a>
+          <div class="portafolio__texts">
+            <div>
+              <h2>Call of Duty WWII</h2>
+              <p class="precio"><span class="moneda">$</span>30</p>
+              <h4 class="text">precio</h4>
+            </div>
+            <div>
+              <a class="fa-solid fa-sack-dollar"> Compra</a>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <figure class="layout__img">
-            <img src="../img/img2.jpg" class="layout__picture" />
+        <div class="portafolio__card card5">
+          <figure class="portafolio__picture">
+            <img src="../img/card5.jpg" class="portafolio__img" />
           </figure>
-          <p class="layout__paragrafo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ullam
-            voluptatum eaque iure perspiciatis id itaque facere odit quia
-            explicabo.
-          </p>
-          <a href="#" class="hero__cta">Lorem ipsum.</a>
+          <div class="portafolio__texts">
+            <div>
+              <h2>Resident Evil 2</h2>
+              <p class="precio"><span class="moneda">$</span>30</p>
+              <h4 class="text">precio</h4>
+            </div>
+            <div>
+              <a class="fa-solid fa-sack-dollar"> Compra</a>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <figure class="layout__img">
-            <img src="../img/img3.jpg" class="layout__picture" />
+        <div class="portafolio__card card6">
+          <figure class="portafolio__picture">
+            <img src="../img/card6.jpg" class="portafolio__img" />
           </figure>
-          <p class="layout__paragrafo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ullam
-            voluptatum eaque iure perspiciatis id itaque facere odit quia
-            explicabo.
-          </p>
-          <a href="#" class="hero__cta">Lorem ipsum.</a>
+          <div class="portafolio__texts">
+            <div>
+              <h2>Resident Evil 3</h2>
+              <p class="precio"><span class="moneda">$</span>30</p>
+              <h4 class="text">precio</h4>
+            </div>
+            <div>
+              <a class="fa-solid fa-sack-dollar"> Compra</a>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <figure class="layout__img">
-            <img src="../img/img4.jpg" class="layout__picture" />
+        <div class="portafolio__card card7">
+          <figure class="portafolio__picture">
+            <img src="../img/card7.jpg" class="portafolio__img" />
           </figure>
-          <p class="layout__paragrafo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ullam
-            voluptatum eaque iure perspiciatis id itaque facere odit quia
-            explicabo.
-          </p>
-          <a href="#" class="hero__cta">Lorem ipsum.</a>
+          <div class="portafolio__texts">
+            <div>
+              <h2>Horizon Zero</h2>
+              <p class="precio"><span class="moneda">$</span>30</p>
+              <h4 class="text">precio</h4>
+            </div>
+            <div>
+              <a class="fa-solid fa-sack-dollar"> Compra</a>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <figure class="layout__img">
-            <img src="../img/img5.jpg" class="layout__picture" />
+        <div class="portafolio__card card8">
+          <figure class="portafolio__picture">
+            <img src="../img/card8.jpg" class="portafolio__img" />
           </figure>
-          <p class="layout__paragrafo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ullam
-            voluptatum eaque iure perspiciatis id itaque facere odit quia
-            explicabo.
-          </p>
-          <a href="#" class="hero__cta">Lorem ipsum.</a>
+          <div class="portafolio__texts">
+            <div>
+              <h2>Read Dead II</h2>
+              <p class="precio"><span class="moneda">$</span>30</p>
+              <h4 class="text">precio</h4>
+            </div>
+            <div>
+              <a class="fa-solid fa-sack-dollar"> Compra</a>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <figure class="layout__img">
-            <img src="../img/img6.jpg" class="layout__picture" />
+        <div class="portafolio__card card9">
+          <figure class="portafolio__picture">
+            <img src="../img/card9.jpg" class="portafolio__img" />
           </figure>
-          <p class="layout__paragrafo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ullam
-            voluptatum eaque iure perspiciatis id itaque facere odit quia
-            explicabo.
-          </p>
-          <a href="#" class="hero__cta">Lorem ipsum.</a>
+          <div class="portafolio__texts">
+            <div>
+              <h2>Call of Duty</h2>
+              <p class="precio"><span class="moneda">$</span>30</p>
+              <h4 class="text">precio</h4>
+            </div>
+            <div>
+              <a class="fa-solid fa-sack-dollar"> Compra</a>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <figure class="layout__img">
-            <img src="../img/img7.jpg" class="layout__picture" />
-          </figure>
-          <p class="layout__paragrafo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ullam
-            voluptatum eaque iure perspiciatis id itaque facere odit quia
-            explicabo.
-          </p>
-          <a href="#" class="hero__cta">Lorem ipsum.</a>
-        </div>
-      </section>
+      </div>
     </main>
 
-    <footer class="footer">
-      <div class="footer__container contenedor">
-        <div class="footer__texts">
-          <h2 class="title">Contactanos</h2>
-          <div class="footer__icons">
-            <a href="#" class="footer__icon fab fa-facebook-f"></a>
-            <a href="#" class="footer__icon fab fa-twitter"></a>
-            <a href="#" class="footer__icon fab fa-instagram"></a>
-          </div>
-          <nav class="footer__nav">
-            <a href="#" class="footer__link">Inicio</a>
-            <a href="#" class="footer__link">Sobre nosotros</a>
-            <a href="#" class="footer__link">Trabjos</a>
-          </nav>
-
-          <p class="footer__copy">
-            Derechos reservados &copy; Cristian Rodriguez
-          </p>
-        </div>
-
-        <figure class="footer__img">
-          <img src="../img/mail.svg" class="footer__picture" />
-        </figure>
-      </div>
-    </footer>
-
+    <!-- JavaScript Bundle with Popper -->
     <script
       src="https://kit.fontawesome.com/0f3d7928c1.js"
       crossorigin="anonymous"

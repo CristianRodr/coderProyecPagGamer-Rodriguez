@@ -89,7 +89,7 @@ body {
 .nav__link--boton:hover {
   color: var(--color-blanco);
   background: #3dfaff;
-  border: 2px solid var(--color-blanco);
+  border: 2px solid #3dfaff;
 }
 
 /* -----------------seccion hero main ------------------ */
@@ -163,7 +163,7 @@ body {
 .hero__boton:hover {
   color: var(--color-blanco);
   background: #3dfaff;
-  border: 2px solid var(--color-blanco);
+  border: 2px solid #3dfaff;
 }
 
 /*----------------------- close main ------------------------- */
