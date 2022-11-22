@@ -499,7 +499,7 @@ figure.layouts__picture {
 /* ------------------- Noticias --------------------- */
 
 .noticias {
-  padding: 70px 0;
+  padding-bottom: 70px;
   background: #fefdff;
 }
 
