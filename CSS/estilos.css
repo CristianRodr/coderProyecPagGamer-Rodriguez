@@ -22,11 +22,8 @@ body {
 }
 
 .hero {
-  background-image: url(/img/fondoHero2.jpg);
-  background-position: center;
-  background-size: cover;
-  padding-top: 0.1px;
-  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(to right, #4ca1af, #eff7f9);
 }
 
 .contenedor {
@@ -46,10 +43,6 @@ body {
 .nav__logo {
   display: flex;
   align-items: center;
-}
-.hero__picture {
-  width: 40px;
-  margin-right: 7px;
 }
 
 .nav__contenedor {
@@ -86,15 +79,18 @@ body {
   border: 2px solid #3dfaff;
 }
 
+.nav__pintura {
+  width: 40px;
+  margin-right: 7px;
+}
 /* -----------------seccion hero main ------------------ */
 
 .hero__main {
-  height: 93vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  min-height: 600px;
-  align-items: end;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
 }
 
 .hero__textos {
@@ -103,20 +99,20 @@ body {
 }
 
 .hero__picture {
-  flex: 1;
+  width: 45%;
+  text-align: center;
+  margin: 0;
 }
 
 .hero__img {
-  width: 100%;
-  max-width: 450px;
-  display: block;
-  margin: 0 auto;
+  max-width: 80%;
 }
 
 .hero__titulo {
   text-align: center;
   font-size: 4rem;
   color: var(--color-primario);
+  margin-bottom: 10px;
 }
 
 .hero__paragrafo {
@@ -166,9 +162,6 @@ body {
   border: 2px solid #3dfaff;
 }
 
-.nav__input:checked + .nav__menu {
-}
-
 .nav__label,
 .nav__input {
   display: none;
@@ -214,6 +207,7 @@ body {
     height: 80vh;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .hero__titulo {
@@ -230,6 +224,14 @@ body {
 
   .hero__search {
     border: 1px solid black;
+  }
+
+  .hero__picture {
+    width: 85%;
+  }
+
+  .hero__img {
+    max-width: 100%;
   }
 }
 
@@ -322,17 +324,9 @@ body {
 
 .gallery {
   padding: 30px 0;
-  background: #fefdff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #000c40,
-    #fefdff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #000c40,
-    #fefdff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #fefdff;
+  background: -webkit-linear-gradient(to right, #000c40, #fefdff);
+  background: linear-gradient(to right, #000c40, #fefdff);
 }
 
 .gallery__control {
@@ -386,7 +380,6 @@ body {
 }
 
 .gallery__icon {
-  /* margin-top: 30px; */
   width: 10%;
   height: 100px;
 }
@@ -399,6 +392,7 @@ body {
   background: #fefdff;
   padding: 80px 0;
 }
+
 .portafolio__grid {
   height: 600px;
   display: grid;
@@ -526,7 +520,7 @@ body {
 }
 /* ----------------- close portafolio------------------ */
 
-/* ------------------- layouts ---------------------  */
+/* --------------------- layouts ---------------------  */
 
 .layouts {
   background: #fefdff;
@@ -535,17 +529,9 @@ body {
 
 .layouts__control {
   display: flex;
-  background: #ede574; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #e1f5c4,
-    #ede574
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #e1f5c4,
-    #ede574
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ede574;
+  background: -webkit-linear-gradient(to right, #e1f5c4, #ede574);
+  background: linear-gradient(to right, #e1f5c4, #ede574);
 
   align-items: center;
 }
@@ -624,7 +610,7 @@ figure.layouts__picture {
   }
 }
 
-/* ------------------- close layouts --------------------- */
+/* ------------------- close layouts ----------------- */
 
 /* ------------------- opinion --------------------- */
 
@@ -699,9 +685,9 @@ figure.layouts__picture {
   }
 }
 
-/* ------------------- close opinion --------------------- */
+/* ------------------- close opinion ------------------- */
 
-/* ------------------- Noticias --------------------- */
+/* --------------------- Noticias --------------------- */
 
 .noticias {
   padding-bottom: 70px;
@@ -831,17 +817,9 @@ figure.layouts__picture {
 /* ------------------  footer ---------------------------- */
 
 .footer {
-  background: #283048; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #fefdff,
-    #283048
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #fefdff,
-    #283048
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #283048;
+  background: -webkit-linear-gradient(to bottom, #fefdff, #283048);
+  background: linear-gradient(to bottom, #fefdff, #283048);
   color: #fff;
   text-align: center;
 }
