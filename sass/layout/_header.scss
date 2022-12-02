@@ -1,0 +1,107 @@
+/* Corresponde a la imagen de fondo de inicio del header */
+.hero {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(97, 144, 232, 0.267),
+      rgba(167, 191, 232, 0.253)
+    ),
+    url("../img/fondoHero3.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  &__main {
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  &__textos {
+    flex: 1;
+    grid-column: 1/3;
+
+    backface-visibility: hidden;
+  }
+
+  &__picture {
+    width: 45%;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__img {
+    max-width: 80%;
+    animation: moveInRight 1s ease-out 0.8s;
+    animation-fill-mode: backwards;
+  }
+
+  &__titulo {
+    text-align: center;
+    font-size: 6rem;
+    color: #fefae0;
+
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+
+  &__paragrafo {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #070707;
+    text-align: center;
+    animation: moveInRight 2s ease-out;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.3rem;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    animation: moveInBottom 0.5s ease-out 0.9s;
+    animation-fill-mode: backwards;
+  }
+
+  &__search {
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    outline: none;
+    border: 0.1rem solid var(--color-blanco);
+  }
+
+  &__buscar {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: var(--color-blanco);
+  }
+
+  &__boton {
+    color: #283048;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    background: var(--color-primario);
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 0.2rem solid #171d1c;
+    transition: all 0.2s;
+
+    &:hover {
+      color: var(--color-blanco);
+      background: #3dfaff;
+      border: 0.2rem solid #3dfaff;
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+  }
+}

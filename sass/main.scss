@@ -1,0 +1,29 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/query";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button.scss";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/menu";
+
+@import "pages/home";
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fredoka+One&family=Gothic+A1:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --color-primario: #fcff6c;
+  --color-secundario: #f4f4ed;
+  --color-terciario: #1b1b1e;
+  --color-blanco: #ffffff;
+  --box-shadow-principal: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}

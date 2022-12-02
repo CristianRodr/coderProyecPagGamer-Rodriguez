@@ -1,0 +1,317 @@
+/* ========seccion about======== */
+
+.about {
+  background: #fefdff;
+  padding: 7rem 0;
+
+  &__secciones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  &__seller {
+    width: 90%;
+    height: 40rem;
+    max-width: 55rem;
+  }
+
+  &__img1 {
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow-principal);
+  }
+
+  &__picture {
+    margin-bottom: 3rem;
+  }
+
+  &__cta {
+    text-decoration: none;
+    color: #283048;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.3rem 1.2rem;
+    background: #72ddf7;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 0.2rem solid #72ddf7;
+
+    &:hover {
+      color: var(--color-blanco);
+      background: #3dfaff;
+      border: 0.2rem solid #3dfaff;
+    }
+  }
+}
+
+/* ========seccion gallery======== */
+
+.gallery {
+  padding: 3rem 0;
+  background: #fefdff;
+  background: -webkit-linear-gradient(to right, #000c40, #fefdff);
+  background: linear-gradient(to right, #000c40, #fefdff);
+
+  &__control {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+  }
+
+  &__game {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  &__contenedor {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__picture {
+    width: 30%;
+    height: 45rem;
+    margin-bottom: 2rem;
+    display: block;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    box-shadow: var(--box-shadow-principal);
+  }
+
+  &__redes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    width: 10%;
+    height: 10rem;
+  }
+}
+
+/* ========seccion portafolio======== */
+.portafolio {
+  background: #fefdff;
+  padding: 8rem 0;
+
+  &__grid {
+    height: 60rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    place-items: center;
+  }
+
+  &__informacion {
+    height: 57rem;
+    padding: 1rem;
+    grid-area: 1/1/4/4;
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 6px 6px 13px -1px rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+  }
+
+  &__title {
+    padding: 1rem;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+  }
+
+  &__paragrafo {
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 300;
+    padding: 1rem;
+    text-align: justify;
+    font-size: 1.6rem;
+  }
+
+  &__picture {
+    width: 18.3rem;
+    height: 12.2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.7rem;
+  }
+}
+
+/* ========seccion layouts======== */
+.layouts {
+  background: #fefdff;
+
+  &__control {
+    display: inline-block;
+    /* width: 100%; */
+    display: flex;
+    background: #ede574;
+    background: -webkit-linear-gradient(to right, #e1f5c4, #ede574);
+    background: linear-gradient(to right, #e1f5c4, #ede574);
+
+    align-items: center;
+  }
+
+  &__picture {
+    width: 88vw;
+  }
+
+  &__img3 {
+    margin: 5rem;
+    width: 85%;
+    background-size: cover;
+    box-shadow: 6px 6px 13px -1px rgba(0, 0, 0, 0.7);
+  }
+
+  &__cta {
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 0.3rem 1rem;
+    background: #087ca7;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 0.2rem solid #087ca7;
+
+    &:hover {
+      color: var(--color-blanco);
+      background: #3dfaff;
+      border: 0.2rem solid #3dfaff;
+    }
+  }
+}
+
+/* ========seccion opinion======== */
+.opinion {
+  padding: 7rem;
+  background: #fefdff;
+
+  &__contenedor {
+    width: 100%;
+    height: 100%;
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+  }
+
+  &__encabezado {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 5rem;
+    height: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+/* ========seccion noticias======== */
+.noticias {
+  padding-bottom: 8.6rem;
+  background: #fefdff;
+
+  &__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "notiCero notiCero notiCero notiUno notiUno"
+      "notiCero notiCero notiCero notiDos notiDos"
+      "notiCero notiCero notiCero notiTres notiTres";
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.7rem;
+  }
+
+  &__imagenUno {
+    background-image: url("../img/warzoneNoti.jpg");
+    width: 50vw;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__imagenDos {
+    background-image: url("../img/grandNoti.jpg");
+    width: 50vw;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__imagenTres {
+    background-image: url("../img/witcherNoti.jpg");
+    width: 50vw;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__textos {
+    padding: 1.5rem 0;
+  }
+
+  &__informacion {
+    display: flex;
+  }
+
+  &__excrito {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.notiCero {
+  grid-area: notiCero;
+}
+
+.notiUno {
+  grid-area: notiUno;
+}
+
+.notiDos {
+  grid-area: notiDos;
+}
+
+.notiTres {
+  grid-area: notiTres;
+}

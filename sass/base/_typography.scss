@@ -1,0 +1,173 @@
+body {
+  font-family: "Dancing Script", cursive;
+  font-family: "Fredoka One", cursive;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background: var(--color-blanco);
+  font-weight: 400;
+  line-height: 1.7;
+  color: #000;
+}
+
+/* ===home: seccion about === */
+.about {
+  &__titulo {
+    font-size: 5rem;
+    text-align: left;
+    color: var(--color-terciario);
+    margin-bottom: 2rem;
+  }
+
+  &__subtitulo {
+    font-family: "Fredoka One", cursive;
+    font-size: 1.8rem;
+    padding-bottom: 0.8rem;
+    color: var(--color-terciario);
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+    color: var(--color-terciario);
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+
+  &__img1 {
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow-principal);
+  }
+}
+
+/* ===home: seccion gallery=== */
+.gallery {
+  &__title {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 7px;
+  }
+
+  &__comentario {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* ===home: seccion portafolio=== */
+.portafolio {
+  &__title {
+    padding: 1rem;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+  }
+
+  &__paragrafo {
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 300;
+    padding: 1rem;
+    text-align: justify;
+    font-size: 1.6rem;
+  }
+
+  &__name {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+
+/* ===home: seccion layout=== */
+
+.layouts {
+  &__title {
+    font-size: 4.4rem;
+  }
+
+  &__paragrafo {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* ===home: seccion opinion=== */
+
+.opinion {
+  &__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  &__caption {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  &__mensaje {
+    padding: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+  }
+
+  &__paragrafo {
+    padding-top: 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* ===home: seccion noticias=== */
+.noticias {
+  &__titulo {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  &__subtitulo {
+    padding-bottom: 1.5rem;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 700;
+    color: #3381fe;
+    font-size: 1.8rem;
+
+    &::after {
+      content: " ";
+      display: block;
+      width: 100%;
+      height: 0.1rem;
+      background: #000000;
+    }
+  }
+
+  &__paragraf {
+    text-align: left;
+    font-size: 1.4rem;
+    font-family: "Gothic A1", sans-serif;
+  }
+
+  &__tituloNoticia {
+    color: #3381fe;
+    font-family: "Gothic A1", sans-serif;
+    font-size: 1.6rem;
+
+    &::after {
+      content: " ";
+      display: block;
+      width: 100%;
+      height: 0.1rem;
+      background: #000000;
+    }
+  }
+}
