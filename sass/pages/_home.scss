@@ -1,7 +1,7 @@
 /* ========seccion about======== */
 
 .about {
-  background: #fefdff;
+  background: $color-inicio-fondo;
   padding: 7rem 0;
 
   &__secciones {
@@ -32,22 +32,7 @@
   }
 
   &__cta {
-    text-decoration: none;
-    color: #283048;
-    font-size: 1.3rem;
-    font-weight: 700;
-    padding: 0.3rem 1.2rem;
-    background: #72ddf7;
-    border: none;
-    border-radius: 3rem;
-    cursor: pointer;
-    border: 0.2rem solid #72ddf7;
-
-    &:hover {
-      color: var(--color-blanco);
-      background: #3dfaff;
-      border: 0.2rem solid #3dfaff;
-    }
+    @extend %btn-placeholder;
   }
 }
 
@@ -55,7 +40,7 @@
 
 .gallery {
   padding: 3rem 0;
-  background: #fefdff;
+  background: $color-inicio-fondo;
   background: -webkit-linear-gradient(to right, #000c40, #fefdff);
   background: linear-gradient(to right, #000c40, #fefdff);
 
@@ -101,7 +86,7 @@
 
 /* ========seccion portafolio======== */
 .portafolio {
-  background: #fefdff;
+  background: $color-inicio-fondo;
   padding: 8rem 0;
 
   &__grid {
@@ -120,7 +105,7 @@
     gap: 2rem;
     width: 90%;
     margin: 0 auto;
-    background: #fff;
+    background: $color-blanco;
     box-shadow: 6px 6px 13px -1px rgba(0, 0, 0, 0.7);
     border-radius: 1rem;
   }
@@ -152,7 +137,7 @@
 
 /* ========seccion layouts======== */
 .layouts {
-  background: #fefdff;
+  background: $color-inicio-fondo;
 
   &__control {
     display: inline-block;
@@ -178,7 +163,7 @@
 
   &__cta {
     text-decoration: none;
-    color: var(--color-secundario);
+    color: $color-secundario;
     font-size: 1.6rem;
     font-weight: 700;
     padding: 0.3rem 1rem;
@@ -188,9 +173,9 @@
     border: 0.2rem solid #087ca7;
 
     &:hover {
-      color: var(--color-blanco);
-      background: #3dfaff;
-      border: 0.2rem solid #3dfaff;
+      color: $color-blanco;
+      background: $color-boton-hover;
+      border: 0.2rem solid $color-boton-hover;
     }
   }
 }
@@ -198,7 +183,7 @@
 /* ========seccion opinion======== */
 .opinion {
   padding: 7rem;
-  background: #fefdff;
+  background: $color-inicio-fondo;
 
   &__contenedor {
     width: 100%;
@@ -235,7 +220,7 @@
 /* ========seccion noticias======== */
 .noticias {
   padding-bottom: 8.6rem;
-  background: #fefdff;
+  background: $color-inicio-fondo;
 
   &__grid {
     display: grid;

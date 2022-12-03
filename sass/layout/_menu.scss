@@ -1,6 +1,6 @@
 .nav {
   height: 7rem;
-  color: var(--color-blanco);
+  color: $color-blanco;
 
   &__logo {
     display: flex;
@@ -15,12 +15,12 @@
   }
 
   &__titulo {
-    color: #2a324b;
+    color: $color-negro;
     font-size: 2.5rem;
   }
 
   &__link {
-    color: #070707;
+    color: $color-negro;
     text-decoration: none;
     margin-left: 1em;
     display: inline-block;
@@ -29,7 +29,7 @@
     font-size: 1.5rem;
 
     &--media {
-      color: #2a324b;
+      color: $color-negro;
       font-weight: 700;
     }
 
@@ -47,11 +47,11 @@
     text-transform: uppercase;
     font-weight: 700;
     padding: 0.4rem 0.7rem;
-    background: var(--color-primario);
-    border: 0.2rem solid #171d1c;
+    background: $color-primario;
+    border: 0.2rem solid $color-negro;
     border-radius: 10rem;
     cursor: pointer;
-    color: #283048;
+    color: $color-negro;
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;

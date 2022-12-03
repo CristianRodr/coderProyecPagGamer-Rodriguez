@@ -1,4 +1,8 @@
 /* Corresponde a la imagen de fondo de inicio del header */
+
+/* ------------------------------------------ */
+/* ---------header pagina inicio---------- */
+/* ---------------------------------------- */
 .hero {
   height: 95vh;
   background-image: linear-gradient(
@@ -43,7 +47,7 @@
   &__titulo {
     text-align: center;
     font-size: 6rem;
-    color: #fefae0;
+    color: $color-titulo-inicio;
 
     animation-name: moveInLeft;
     animation-duration: 2s;
@@ -74,34 +78,95 @@
     padding: 0.5rem;
     border-radius: 5rem;
     outline: none;
-    border: 0.1rem solid var(--color-blanco);
+    border: 0.1rem solid $color-blanco;
   }
 
   &__buscar {
     font-weight: 700;
     font-size: 1.5rem;
     padding: 1rem;
-    color: var(--color-blanco);
+    color: $color-blanco;
   }
 
   &__boton {
-    color: #283048;
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: 0.5rem 1rem;
-    background: var(--color-primario);
-    border: none;
-    border-radius: 3rem;
-    cursor: pointer;
-    border: 0.2rem solid #171d1c;
-    transition: all 0.2s;
+    @extend %btn-placeholder;
+  }
+}
 
-    &:hover {
-      color: var(--color-blanco);
-      background: #3dfaff;
-      border: 0.2rem solid #3dfaff;
-      transform: translateY(-0.3rem);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    }
+/* ------------------------------------------ */
+/* ---------header pagina producto---------- */
+/* ---------------------------------------- */
+
+.headline {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(189, 195, 199, 0.493),
+      rgba(44, 62, 80, 0.521)
+    ),
+    url("../img/theWitcher.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 0.1px;
+  position: relative;
+
+  &__picture {
+    width: 4rem;
+    margin-right: 0.7rem;
+  }
+
+  &__wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__titulo {
+    /* margin-top: 1rem; */
+    font-family: "Fredoka One", cursive;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #fffc00, #fcfbd1);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__paragrafo {
+    font-family: "Fredoka One", cursive;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    color: $color-blanco;
+  }
+
+  &__main {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    outline: none;
+  }
+
+  &__search {
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    padding: 5px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid $color-blanco;
+  }
+
+  &__boton {
+    @extend %btn-placeholder;
   }
 }

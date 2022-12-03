@@ -1,8 +1,8 @@
 .footer {
-  background: #283048;
+  background: $color-principal-footer;
   background: -webkit-linear-gradient(to bottom, #fefdff, #283048);
   background: linear-gradient(to bottom, #fefdff, #283048);
-  color: #fff;
+  color: $color-blanco;
   text-align: center;
 
   .title {
@@ -11,7 +11,7 @@
   }
 
   &__container {
-    --color-primary: #fff;
+    color: $color-blanco;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,7 @@
     font-size: 2rem;
     margin: 0 3rem;
     text-decoration: none;
-    color: #fff;
+    color: $color-blanco;
     margin-bottom: 3rem;
     width: 6rem;
     height: 6rem;
@@ -35,8 +35,8 @@
     border-radius: 50%;
 
     &:hover {
-      background: #fff;
-      color: #3dfaff;
+      background: $color-blanco;
+      color: $color-boton-hover;
       cursor: pointer;
     }
   }
@@ -47,7 +47,7 @@
 
   &__link {
     display: inline-block;
-    color: #fff;
+    color: $color-blanco;
     margin: 0 2rem;
     margin-bottom: 3rem;
 

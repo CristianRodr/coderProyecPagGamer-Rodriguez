@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Producto</title>
-    <link rel="stylesheet" href="../CSS/producto.css" />
-    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <!-- <link rel="stylesheet" href="../normalize.css" /> -->
   </head>
 
   <body>
-    <header class="hero">
+    <header class="headline">
       <nav class="nav">
         <section class="nav__contenedor contenedor">
           <figure class="nav__logo">
-            <img src="../img/bx-game.svg" class="hero__picture" />
+            <img src="../img/bx-game.svg" class="nav__pintura" />
             <h2 class="nav__titulo">PlayerGamer</h2>
           </figure>
 
@@ -39,8 +39,8 @@
         </section>
       </nav>
 
-      <section class="hero__main contenedor">
-        <div class="hero__wave" style="height: 150px; overflow: hidden">
+      <section class="headline__main contenedor">
+        <div class="headline__wave" style="height: 150px; overflow: hidden">
           <svg
             viewBox="0 0 500 150"
             preserveAspectRatio="none"
@@ -52,161 +52,163 @@
             ></path>
           </svg>
         </div>
-        <div class="hero__texts">
-          <h1 class="hero__titulo">
+        <div class="headline__texts">
+          <h1 class="headline__titulo">
             llevate todo lo que quieras al mejor precio
           </h1>
-          <p class="hero__paragrafo">
+          <p class="headline__paragrafo">
             Hazlo, y si te da miedo, hazlo con miedo.
           </p>
-          <form action="/action_page.php" class="hero__form">
+          <form action="/action_page.php" class="headline__form">
             <input
-              class="hero__search"
+              class="headline__search"
               type="search"
               id="BuscarJuego"
               name="BuscarJuego"
               placeholder="Buscar..."
             />
-            <input type="submit" class="hero__boton" />
+            <input type="submit" class="headline__boton" />
           </form>
         </div>
       </section>
     </header>
 
     <main class="main">
-      <div class="portafolio__grid contenedor">
-        <div class="portafolio__card card1">
-          <figure class="portafolio__picture">
-            <img src="../img/card1.jpg" class="portafolio__img" />
-          </figure>
-          <div class="portafolio__texts">
-            <div>
-              <h2 class="juego">Call of Duty Cold</h2>
-              <p class="precio"><span class="moneda">$</span>30</p>
-              <h4 class="text">precio</h4>
-            </div>
-            <div>
-              <a class="fa-solid fa-sack-dollar"> Compra</a>
-            </div>
-          </div>
-        </div>
-        <div class="portafolio__card card2">
-          <figure class="portafolio__picture">
-            <img src="../img/card2.jpg" class="portafolio__img" />
-          </figure>
-          <div class="portafolio__texts">
-            <div>
-              <h2 class="juego">Death Stranding</h2>
-              <p class="precio"><span class="moneda">$</span>30</p>
-              <h4 class="text">precio</h4>
-            </div>
-            <div>
-              <a class="fa-solid fa-sack-dollar"> Compra</a>
+      <div class="product">
+        <div class="product__grid contenedor">
+          <div class="product__card card1">
+            <figure class="product__picture">
+              <img src="../img/card1.jpg" class="product__img" />
+            </figure>
+            <div class="product__texts">
+              <div class="product__ventas">
+                <h2 class="juego">Call of Duty Cold</h2>
+                <p class="precio"><span class="moneda">$</span>30</p>
+                <h4 class="text">precio</h4>
+              </div>
+              <div>
+                <a class="fa-solid fa-sack-dollar"> Compra</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="portafolio__card card3">
-          <figure class="portafolio__picture">
-            <img src="../img/card3.jpg" class="portafolio__img" />
-          </figure>
-          <div class="portafolio__texts">
-            <div>
-              <h2 class="juego">Days Gone</h2>
-              <p class="precio"><span class="moneda">$</span>30</p>
-              <h4 class="text">precio</h4>
-            </div>
-            <div>
-              <a class="fa-solid fa-sack-dollar"> Compra</a>
-            </div>
-          </div>
-        </div>
-        <div class="portafolio__card card4">
-          <figure class="portafolio__picture">
-            <img src="../img/card4.jpg" class="portafolio__img" />
-          </figure>
-          <div class="portafolio__texts">
-            <div>
-              <h2 class="juego">Call of Duty WWII</h2>
-              <p class="precio"><span class="moneda">$</span>30</p>
-              <h4 class="text">precio</h4>
-            </div>
-            <div>
-              <a class="fa-solid fa-sack-dollar"> Compra</a>
+          <div class="product__card card2">
+            <figure class="product__picture">
+              <img src="../img/card2.jpg" class="product__img" />
+            </figure>
+            <div class="product__texts">
+              <div class="product__ventas">
+                <h2 class="juego">Death Stranding</h2>
+                <p class="precio"><span class="moneda">$</span>30</p>
+                <h4 class="text">precio</h4>
+              </div>
+              <div>
+                <a class="fa-solid fa-sack-dollar"> Compra</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="portafolio__card card5">
-          <figure class="portafolio__picture">
-            <img src="../img/card5.jpg" class="portafolio__img" />
-          </figure>
-          <div class="portafolio__texts">
-            <div>
-              <h2 class="juego">Resident Evil 2</h2>
-              <p class="precio"><span class="moneda">$</span>30</p>
-              <h4 class="text">precio</h4>
-            </div>
-            <div>
-              <a class="fa-solid fa-sack-dollar"> Compra</a>
-            </div>
-          </div>
-        </div>
-        <div class="portafolio__card card6">
-          <figure class="portafolio__picture">
-            <img src="../img/card6.jpg" class="portafolio__img" />
-          </figure>
-          <div class="portafolio__texts">
-            <div>
-              <h2 class="juego">Resident Evil 3</h2>
-              <p class="precio"><span class="moneda">$</span>30</p>
-              <h4 class="text">precio</h4>
-            </div>
-            <div>
-              <a class="fa-solid fa-sack-dollar"> Compra</a>
+          <div class="product__card card3">
+            <figure class="product__picture">
+              <img src="../img/card3.jpg" class="product__img" />
+            </figure>
+            <div class="product__texts">
+              <div class="product__ventas">
+                <h2 class="juego">Days Gone</h2>
+                <p class="precio"><span class="moneda">$</span>30</p>
+                <h4 class="text">precio</h4>
+              </div>
+              <div>
+                <a class="fa-solid fa-sack-dollar"> Compra</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="portafolio__card card7">
-          <figure class="portafolio__picture">
-            <img src="../img/card7.jpg" class="portafolio__img" />
-          </figure>
-          <div class="portafolio__texts">
-            <div>
-              <h2 class="juego">Horizon Zero</h2>
-              <p class="precio"><span class="moneda">$</span>30</p>
-              <h4 class="text">precio</h4>
-            </div>
-            <div>
-              <a class="fa-solid fa-sack-dollar"> Compra</a>
-            </div>
-          </div>
-        </div>
-        <div class="portafolio__card card8">
-          <figure class="portafolio__picture">
-            <img src="../img/card8.jpg" class="portafolio__img" />
-          </figure>
-          <div class="portafolio__texts">
-            <div>
-              <h2 class="juego">Read Dead II</h2>
-              <p class="precio"><span class="moneda">$</span>30</p>
-              <h4 class="text">precio</h4>
-            </div>
-            <div>
-              <a class="fa-solid fa-sack-dollar"> Compra</a>
+          <div class="product__card card4">
+            <figure class="product__picture">
+              <img src="../img/card4.jpg" class="product__img" />
+            </figure>
+            <div class="product__texts">
+              <div class="product__ventas">
+                <h2 class="juego">Call of Duty WWII</h2>
+                <p class="precio"><span class="moneda">$</span>30</p>
+                <h4 class="text">precio</h4>
+              </div>
+              <div>
+                <a class="fa-solid fa-sack-dollar"> Compra</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="portafolio__card card9">
-          <figure class="portafolio__picture">
-            <img src="../img/card9.jpg" class="portafolio__img" />
-          </figure>
-          <div class="portafolio__texts">
-            <div>
-              <h2 class="juego">The Last of Us</h2>
-              <p class="precio"><span class="moneda">$</span>30</p>
-              <h4 class="text">precio</h4>
+          <div class="product__card card5">
+            <figure class="product__picture">
+              <img src="../img/card5.jpg" class="product__img" />
+            </figure>
+            <div class="product__texts">
+              <div class="product__ventas">
+                <h2 class="juego">Resident Evil 2</h2>
+                <p class="precio"><span class="moneda">$</span>30</p>
+                <h4 class="text">precio</h4>
+              </div>
+              <div>
+                <a class="fa-solid fa-sack-dollar"> Compra</a>
+              </div>
             </div>
-            <div>
-              <a class="fa-solid fa-sack-dollar"> Compra</a>
+          </div>
+          <div class="product__card card6">
+            <figure class="product__picture">
+              <img src="../img/card6.jpg" class="product__img" />
+            </figure>
+            <div class="product__texts">
+              <div class="product__ventas">
+                <h2 class="juego">Resident Evil 3</h2>
+                <p class="precio"><span class="moneda">$</span>30</p>
+                <h4 class="text">precio</h4>
+              </div>
+              <div>
+                <a class="fa-solid fa-sack-dollar"> Compra</a>
+              </div>
+            </div>
+          </div>
+          <div class="product__card card7">
+            <figure class="product__picture">
+              <img src="../img/card7.jpg" class="product__img" />
+            </figure>
+            <div class="product__texts">
+              <div class="product__ventas">
+                <h2 class="juego">Horizon Zero</h2>
+                <p class="precio"><span class="moneda">$</span>30</p>
+                <h4 class="text">precio</h4>
+              </div>
+              <div>
+                <a class="fa-solid fa-sack-dollar"> Compra</a>
+              </div>
+            </div>
+          </div>
+          <div class="product__card card8">
+            <figure class="product__picture">
+              <img src="../img/card8.jpg" class="product__img" />
+            </figure>
+            <div class="product__texts">
+              <div class="product__ventas">
+                <h2 class="juego">Read Dead II</h2>
+                <p class="precio"><span class="moneda">$</span>30</p>
+                <h4 class="text">precio</h4>
+              </div>
+              <div>
+                <a class="fa-solid fa-sack-dollar"> Compra</a>
+              </div>
+            </div>
+          </div>
+          <div class="product__card card9">
+            <figure class="product__picture">
+              <img src="../img/card9.jpg" class="product__img" />
+            </figure>
+            <div class="product__texts">
+              <div class="product__ventas">
+                <h2 class="juego">The Last of Us</h2>
+                <p class="precio"><span class="moneda">$</span>30</p>
+                <h4 class="text">precio</h4>
+              </div>
+              <div>
+                <a class="fa-solid fa-sack-dollar"> Compra</a>
+              </div>
             </div>
           </div>
         </div>
