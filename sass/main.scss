@@ -4,7 +4,7 @@
 
 @import "base/animations";
 @import "base/base";
-@import "base/query";
+
 @import "base/typography";
 @import "base/utilities";
 
@@ -16,5 +16,7 @@
 
 @import "pages/home";
 @import "pages/producto";
+
+@import "base/query";
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fredoka+One&family=Gothic+A1:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
