@@ -54,7 +54,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: #ffffff;
   font-weight: 400;
-  line-height: 1.7;
+  /* line-height: 1.7; */
   color: #000; }
 
 /* ------------------------------------------ */
@@ -218,7 +218,7 @@ body {
 .text {
   font-size: 1rem; }
 
-.hero__boton, .headline__boton, .about__cta {
+.hero__boton, .headline__boton, .heading__boton, .about__cta {
   text-decoration: none;
   color: #283048;
   font-size: 1.2rem;
@@ -229,9 +229,8 @@ body {
   outline: none;
   border-radius: 3rem;
   cursor: pointer;
-  border: 0.2rem solid #171d1c;
-  transition: all 0.2s; }
-  .hero__boton:hover, .headline__boton:hover, .about__cta:hover {
+  border: 0.2rem solid #171d1c; }
+  .hero__boton:hover, .headline__boton:hover, .heading__boton:hover, .about__cta:hover {
     color: #ffffff;
     background: #3dfaff;
     border: 0.2rem solid #3dfaff;
@@ -354,7 +353,7 @@ body {
 /* ---------------------------------------- */
 .headline {
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(189, 195, 199, 0.493), rgba(44, 62, 80, 0.521)), url("../img/theWitcher.jpg");
+  background-image: linear-gradient(to right, rgba(189, 195, 199, 0), rgba(44, 62, 80, 0.295)), url("../img/fondoServi4.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 0.1px;
@@ -377,11 +376,12 @@ body {
     -webkit-background-clip: text;
     color: transparent; }
   .headline__paragrafo {
-    font-family: "Fredoka One", cursive;
+    font-family: "Poppins", sans-serif;
     font-size: 2rem;
     text-align: center;
     font-weight: 700;
-    color: #ffffff; }
+    color: #ffffff;
+    letter-spacing: 0.1rem; }
   .headline__main {
     width: 100%;
     height: 80%;
@@ -395,6 +395,60 @@ body {
     align-items: baseline;
     outline: none; }
   .headline__search {
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    padding: 5px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid #ffffff; }
+
+/* ------------------------------------------ */
+/* ---------header pagina servicios--------- */
+/* ---------------------------------------- */
+.heading {
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(189, 195, 199, 0), rgba(44, 62, 80, 0.295)), url("../img/fondoServi5.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 0.1px;
+  position: relative; }
+  .heading__picture {
+    width: 4rem;
+    margin-right: 0.7rem; }
+  .heading__wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+  .heading__titulo {
+    /* margin-top: 1rem; */
+    font-family: "Fredoka One", cursive;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #fffc00, #fcfbd1);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .heading__paragrafo {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.1rem; }
+  .heading__main {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center; }
+  .heading__form {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    outline: none; }
+  .heading__search {
     margin-top: 1.5rem;
     margin-right: 0.5rem;
     padding: 5px;
@@ -662,21 +716,21 @@ body {
     border-radius: 0.7rem; }
   .noticias__imagenUno {
     background-image: url("../img/warzoneNoti.jpg");
-    width: 50vw;
+    width: 24vw;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
   .noticias__imagenDos {
     background-image: url("../img/grandNoti.jpg");
-    width: 50vw;
+    width: 24vw;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
   .noticias__imagenTres {
     background-image: url("../img/witcherNoti.jpg");
-    width: 50vw;
+    width: 24vw;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -771,6 +825,154 @@ body {
 .card9 {
   grid-area: card9;
   height: 600px; }
+
+.services {
+  margin-bottom: 48px;
+  padding-top: 13px; }
+  .services__grid {
+    height: 85vh;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "servione servione servitwo servitwo servinoti" "servithree servithree servifour servifour servinoti"; }
+  .services__control {
+    box-shadow: 6px 2px 14px -1px rgba(0, 0, 0, 0.7);
+    display: flex;
+    border-radius: 1rem; }
+  .services__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end; }
+  .services__texts {
+    display: flex;
+    flex-direction: column; }
+  .services__encabezado {
+    padding: 1rem 0; }
+  .services__pie {
+    padding: 2rem; }
+  .services__img {
+    padding: 1.5rem;
+    width: 23rem;
+    height: 29rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem; }
+  .services__title {
+    color: #A61C3C;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Fredoka One", cursive;
+    padding: 1rem; }
+  .services__subtitle {
+    font-size: 1.7rem;
+    font-family: "Fredoka One", cursive; }
+  .services__paragrafo {
+    font-size: 1.2rem;
+    font-family: "Gothic A1", sans-serif; }
+  .services__price {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-align: end;
+    font-family: "Fredoka One", cursive; }
+  .services__minparagrafo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: end;
+    font-family: "Fredoka One", cursive; }
+
+.btn-buy {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem 7rem;
+  background: #44CF6C;
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  box-shadow: 6px 5px 14px -1px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s; }
+  .btn-buy:hover {
+    background: #A9FDAC;
+    box-shadow: none; }
+
+.servione {
+  grid-area: servione; }
+
+.servitwo {
+  grid-area: servitwo; }
+
+.servithree {
+  grid-area: servithree; }
+
+.servifour {
+  grid-area: servifour; }
+
+.servinoti {
+  grid-area: servinoti; }
+  .servinoti__ul {
+    list-style-type: none; }
+  .servinoti__li {
+    margin-bottom: 1.5rem; }
+  .servinoti__noticia {
+    padding: 15px 20px 20px; }
+  .servinoti__lista {
+    padding-left: 95px;
+    position: relative;
+    min-height: 80px;
+    padding-top: 5px; }
+  .servinoti__img {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8rem;
+    height: 8rem;
+    border-radius: .5rem; }
+  .servinoti__span {
+    line-height: 2rem;
+    background-color: #8390FA;
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    border-radius: 0 10px 0 0;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 700;
+    padding: 0 8px; }
+  .servinoti__top {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -1px; }
+  .servinoti__title {
+    font-size: 1.2rem;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 700;
+    max-height: 4.5rem;
+    overflow: hidden;
+    margin-bottom: 1rem; }
+  .servinoti__btn {
+    background-color: rgba(1, 188, 242, 0.1);
+    color: #01bcf2;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    line-height: 2rem;
+    text-decoration: none;
+    transition: all .2s linear; }
+    .servinoti__btn:hover {
+      color: #ffffff;
+      background-color: rgba(1, 242, 242, 0.918); }
 
 /* ------------------------------------------ */
 /* -------query de la pagina inicio--------- */

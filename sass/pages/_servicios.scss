@@ -1,0 +1,205 @@
+.services {
+    margin-bottom: 48px;
+    padding-top: 13px;
+
+    &__grid {
+        height: 85vh;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "servione servione servitwo servitwo servinoti"
+        "servithree servithree servifour servifour servinoti";
+    }
+
+    &__control {
+        box-shadow: 6px 2px 14px -1px rgba(0, 0, 0, 0.7);
+        display: flex;
+        border-radius: 1rem;
+    }
+
+    &__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__texts {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__encabezado {
+        padding: 1rem 0;
+    }
+
+    &__pie {
+        padding: 2rem;
+    }
+
+    &__img {
+        padding: 1.5rem;
+        width: 23rem;
+        height: 29rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 2rem;
+        
+    }
+
+    &__title {
+        color: #A61C3C;
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: "Fredoka One", cursive;
+        padding: 1rem;
+    }
+
+    &__subtitle {
+        font-size: 1.7rem;
+        font-family: "Fredoka One", cursive;
+    }
+
+    &__paragrafo {
+        font-size: 1.2rem;
+        font-family: "Gothic A1", sans-serif;
+    }
+
+    &__price {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        text-align: end;
+        font-family: "Fredoka One", cursive;
+    }
+
+    &__minparagrafo {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: end;
+        font-family: "Fredoka One", cursive;
+    }
+}
+
+.btn-buy {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem 7rem;
+  background: #44CF6C;
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  box-shadow: 6px 5px 14px -1px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s;
+
+  &:hover {
+    background: #A9FDAC;
+    box-shadow: none;
+  }
+}
+
+.servione {
+    grid-area: servione;
+
+}
+
+.servitwo {
+    grid-area: servitwo ;
+}
+
+.servithree {
+    grid-area: servithree;
+}
+
+.servifour {
+    grid-area: servifour;
+}
+
+.servinoti {
+    grid-area: servinoti;
+
+    &__ul {
+        list-style-type: none
+    }
+
+    &__li {
+        margin-bottom: 1.5rem;
+    }
+
+    &__noticia {
+        padding: 15px 20px 20px;
+    }
+
+    &__lista {
+        padding-left: 95px;
+        position: relative;
+        min-height: 80px;
+        padding-top: 5px;
+    }
+
+    &__img {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 8rem;
+        height: 8rem;
+        border-radius: .5rem;
+    }
+
+    &__span {
+        line-height: 2rem;
+        background-color: #8390FA;
+        position: absolute;
+        left: -2px;
+        bottom: -2px;
+        border-radius: 0 10px 0 0;
+        font-size: 1rem;
+        color: #000;
+        font-weight: 700;
+        padding: 0 8px;
+    }
+
+    &__top {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 3rem;
+        letter-spacing: -1px;
+    }
+
+    &__title {
+        font-size: 1.2rem;
+        font-family: "Gothic A1", sans-serif;
+        font-weight: 700;
+        max-height: 4.5rem;
+        overflow: hidden;
+        margin-bottom: 1rem;
+    }
+
+    &__btn {
+        background-color: rgba(1,188,242,.1);
+        color: #01bcf2;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 2rem;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+        line-height: 2rem;
+        text-decoration: none;
+        transition: all .2s linear;
+
+        &:hover {
+            color: #ffffff;
+            background-color: rgba(1, 242, 242, 0.918);
+        }
+    }
+}

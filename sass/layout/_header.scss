@@ -101,10 +101,10 @@
   height: 100vh;
   background-image: linear-gradient(
       to right,
-      rgba(189, 195, 199, 0.493),
-      rgba(44, 62, 80, 0.521)
+      rgba(189, 195, 199, 0),
+      rgba(44, 62, 80, 0.295)
     ),
-    url("../img/theWitcher.jpg");
+    url("../img/fondoServi4.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 0.1px;
@@ -134,11 +134,91 @@
   }
 
   &__paragrafo {
-    font-family: "Fredoka One", cursive;
+    font-family: "Poppins", sans-serif;
     font-size: 2rem;
     text-align: center;
     font-weight: 700;
     color: $color-blanco;
+    letter-spacing: 0.1rem;
+  }
+
+  &__main {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    outline: none;
+  }
+
+  &__search {
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    padding: 5px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid $color-blanco;
+  }
+
+  &__boton {
+    @extend %btn-placeholder;
+  }
+}
+
+/* ------------------------------------------ */
+/* ---------header pagina servicios--------- */
+/* ---------------------------------------- */
+
+.heading{
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(189, 195, 199, 0),
+      rgba(44, 62, 80, 0.295)
+    ),
+    url("../img/fondoServi5.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 0.1px;
+  position: relative;
+
+  &__picture {
+    width: 4rem;
+    margin-right: 0.7rem;
+  }
+
+  &__wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__titulo {
+    /* margin-top: 1rem; */
+    font-family: "Fredoka One", cursive;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #fffc00, #fcfbd1);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__paragrafo {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    color: $color-blanco;
+    letter-spacing: 0.1rem;
   }
 
   &__main {
