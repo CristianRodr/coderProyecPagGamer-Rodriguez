@@ -285,6 +285,10 @@ body {
     margin-top: 3rem;
     width: 90%; }
 
+@media screen and (max-width: 768px) {
+  .title {
+    margin-top: 2.7rem; } }
+
 /* Corresponde a la imagen de fondo de inicio del header */
 /* ------------------------------------------ */
 /* ---------header pagina inicio---------- */
@@ -861,16 +865,17 @@ body {
     background-size: cover;
     border-radius: 2rem; }
   .services__title {
-    color: #A61C3C;
+    color: #FF1053;
     text-align: center;
     font-size: 2.5rem;
     font-family: "Fredoka One", cursive;
     padding: 1rem; }
   .services__subtitle {
-    font-size: 1.7rem;
-    font-family: "Fredoka One", cursive; }
+    font-size: 2rem;
+    font-family: "Fredoka One", cursive;
+    color: #09E85E; }
   .services__paragrafo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: "Gothic A1", sans-serif; }
   .services__price {
     font-size: 3rem;
@@ -935,7 +940,7 @@ body {
     border-radius: .5rem; }
   .servinoti__span {
     line-height: 2rem;
-    background-color: #8390FA;
+    background-color: #E0FF4F;
     position: absolute;
     left: -2px;
     bottom: -2px;
@@ -974,6 +979,23 @@ body {
       color: #ffffff;
       background-color: rgba(1, 242, 242, 0.918); }
 
+/* ========seccion clientes======== */
+/* .nuestros {
+    margin-bottom: 48px;
+    padding-top: 13px;
+
+    &__grid {
+        height: 85vh;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "servione servione servitwo servitwo servinoti"
+        "servithree servithree servifour servifour servinoti";
+    }
+
+} */
 /* ------------------------------------------ */
 /* -------query de la pagina inicio--------- */
 /* ---------------------------------------- */
@@ -1019,6 +1041,7 @@ body {
   .portafolio__paragrafo {
     font-size: 1.5rem; }
   .portafolio__grid {
+    margin-top: 15px;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1056,6 +1079,15 @@ body {
     grid-area: member9; } }
 
 /* ===home: MediaQuery seccion layout=== */
+@media screen and (max-width: 768px) {
+  .layouts__title {
+    font-size: 2rem; }
+  .layouts__img3 {
+    margin: 3rem; }
+  .layouts__paragrafo {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem; } }
+
 @media screen and (max-width: 500px) {
   .layouts__control {
     display: flex;
@@ -1081,12 +1113,50 @@ body {
     margin-bottom: 1rem; } }
 
 /* ===home: MediaQuery seccion opinion=== */
+@media screen and (max-width: 768px) {
+  .opinion {
+    padding: 3rem;
+    background: #fefdff; } }
+
 @media screen and (max-width: 500px) {
   .opinion {
     padding: 3rem 0;
     background: #f4f4ed; }
   .opinion__mensaje {
     width: 90%; } }
+
+/* ===home: MediaQuery seccion noticias=== */
+@media screen and (max-width: 768px) {
+  .noticias {
+    padding-bottom: 3.6rem;
+    background: #fefdff; }
+  .noticias__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "notiCero notiCero notiCero notiCero" "notiCero notiCero notiCero notiCero" "notiCero notiCero notiCero notiCero" "notiUno notiUno notiDos notiDos" "notiTres notiTres . ."; }
+  .noticias__imagenUno {
+    background-image: url("../img/warzoneNoti.jpg");
+    width: 100vw;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .noticias__imagenDos {
+    background-image: url("../img/grandNoti.jpg");
+    width: 100vw;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .noticias__imagenTres {
+    background-image: url("../img/witcherNoti.jpg");
+    width: 100vw;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
 /* ------------------------------------------ */
 /* -------query de la pagina producto------- */

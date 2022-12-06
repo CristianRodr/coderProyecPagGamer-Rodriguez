@@ -52,7 +52,7 @@
     }
 
     &__title {
-        color: #A61C3C;
+        color: #FF1053;
         text-align: center;
         font-size: 2.5rem;
         font-family: "Fredoka One", cursive;
@@ -60,12 +60,14 @@
     }
 
     &__subtitle {
-        font-size: 1.7rem;
+        font-size: 2rem;
         font-family: "Fredoka One", cursive;
+        
+        color: #09E85E;
     }
 
     &__paragrafo {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-family: "Gothic A1", sans-serif;
     }
 
@@ -155,7 +157,7 @@
 
     &__span {
         line-height: 2rem;
-        background-color: #8390FA;
+        background-color: #E0FF4F;
         position: absolute;
         left: -2px;
         bottom: -2px;
@@ -203,3 +205,22 @@
         }
     }
 }
+
+/* ========seccion clientes======== */
+
+/* .nuestros {
+    margin-bottom: 48px;
+    padding-top: 13px;
+
+    &__grid {
+        height: 85vh;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "servione servione servitwo servitwo servinoti"
+        "servithree servithree servifour servifour servinoti";
+    }
+
+} */
