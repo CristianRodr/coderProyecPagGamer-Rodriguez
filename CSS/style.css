@@ -54,7 +54,6 @@ body {
   font-family: "Poppins", sans-serif;
   background: #ffffff;
   font-weight: 400;
-  /* line-height: 1.7; */
   color: #000; }
 
 /* ------------------------------------------ */
@@ -545,7 +544,8 @@ body {
 /* ========seccion about======== */
 .about {
   background: #fefdff;
-  padding: 7rem 0; }
+  padding: 7rem 0;
+  padding-bottom: 12px; }
   .about__secciones {
     display: flex;
     flex-wrap: wrap;
@@ -562,7 +562,8 @@ body {
     height: 20rem;
     background-size: cover;
     border-radius: 50%;
-    box-shadow: var(--box-shadow-principal); }
+    -webkit-box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.59);
+    box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.59); }
   .about__picture {
     margin-bottom: 3rem; }
 
@@ -592,7 +593,8 @@ body {
     display: block;
     border-radius: 0.5rem;
     object-fit: cover;
-    box-shadow: var(--box-shadow-principal); }
+    -webkit-box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.59);
+    box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.59); }
   .gallery__redes {
     display: flex;
     justify-content: space-between; }
@@ -834,14 +836,16 @@ body {
   margin-bottom: 48px;
   padding-top: 13px; }
   .services__grid {
-    height: 85vh;
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "servione servione servitwo servitwo servinoti" "servithree servithree servifour servifour servinoti"; }
+    grid-template-areas: "servione servione servitwo servitwo servinoti" "servithree servithree servifour servifour servinoti";
+    justify-items: center;
+    align-items: center; }
   .services__control {
-    box-shadow: 6px 2px 14px -1px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.59);
+    box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.59);
     display: flex;
     border-radius: 1rem; }
   .services__contenido {
@@ -863,20 +867,25 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    padding-top: 15px;
+    padding-bottom: 0px; }
   .services__title {
-    color: #FF1053;
+    color: #0c0708;
     text-align: center;
-    font-size: 2.5rem;
-    font-family: "Fredoka One", cursive;
-    padding: 1rem; }
+    font-size: 2.2rem;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem;
+    padding-top: 0px; }
   .services__subtitle {
     font-size: 2rem;
-    font-family: "Fredoka One", cursive;
-    color: #09E85E; }
+    font-family: "Poppins", sans-serif;
+    color: #320d6d; }
   .services__paragrafo {
     font-size: 1.5rem;
-    font-family: "Gothic A1", sans-serif; }
+    font-family: "Gothic A1", sans-serif;
+    text-align: justify;
+    padding-right: 16px; }
   .services__price {
     font-size: 3rem;
     letter-spacing: 2px;
@@ -891,18 +900,18 @@ body {
 .btn-buy {
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   padding: 0.5rem 7rem;
-  background: #44CF6C;
-  border: none;
+  background: #320d6d;
+  border: 1px solid #000000;
   outline: none;
   border-radius: 3rem;
   cursor: pointer;
-  box-shadow: 6px 5px 14px -1px rgba(0, 0, 0, 0.7);
+  /* box-shadow: 6px 5px 14px -1px rgba(0, 0, 0, 0.7); */
   transition: all 0.2s; }
   .btn-buy:hover {
-    background: #A9FDAC;
+    background: #a9fdac;
     box-shadow: none; }
 
 .servione {
@@ -918,7 +927,9 @@ body {
   grid-area: servifour; }
 
 .servinoti {
-  grid-area: servinoti; }
+  grid-area: servinoti;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px 4px 16px 2px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, -1px 4px 16px 2px rgba(0, 0, 0, 0); }
   .servinoti__ul {
     list-style-type: none; }
   .servinoti__li {
@@ -937,10 +948,10 @@ body {
     top: 0;
     width: 8rem;
     height: 8rem;
-    border-radius: .5rem; }
+    border-radius: 0.5rem; }
   .servinoti__span {
     line-height: 2rem;
-    background-color: #E0FF4F;
+    background-color: #e0ff4f;
     position: absolute;
     left: -2px;
     bottom: -2px;
@@ -974,28 +985,86 @@ body {
     padding: 0 1rem;
     line-height: 2rem;
     text-decoration: none;
-    transition: all .2s linear; }
+    transition: all 0.2s linear; }
     .servinoti__btn:hover {
       color: #ffffff;
       background-color: rgba(1, 242, 242, 0.918); }
 
 /* ========seccion clientes======== */
-/* .nuestros {
-    margin-bottom: 48px;
-    padding-top: 13px;
+.nuestros {
+  margin-bottom: 48px;
+  padding-top: 13px; }
+  .nuestros__grid {
+    height: 80vh;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "seccion1 seccion1 seccion2 seccion2" "seccion1 seccion1 seccion3 seccion3"; }
+  .nuestros__title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem; }
+  .nuestros__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0.5rem;
+    object-fit: cover; }
+  .nuestros__imagen {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; }
+  .nuestros__subtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: 2.9rem;
+    text-align: center;
+    color: #fbf5f3; }
+  .nuestros__texts {
+    padding-left: 1rem; }
+  .nuestros__mintitle {
+    font-size: 2.2rem; }
+  .nuestros__paragrafo {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-right: 1rem; }
 
-    &__grid {
-        height: 85vh;
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-        "servione servione servitwo servitwo servinoti"
-        "servithree servithree servifour servifour servinoti";
-    }
+.seccion1 {
+  grid-area: seccion1;
+  position: relative;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px 4px 16px 2px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, -1px 4px 16px 2px rgba(0, 0, 0, 0); }
 
-} */
+.seccion2 {
+  grid-area: seccion2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "seccion2-grid1 seccion2-grid2";
+  border: 2px solid #9a4c95; }
+  .seccion2 .seccion2-grid1 {
+    grid-area: seccion2-grid1; }
+  .seccion2 .seccion2-grid2 {
+    grid-area: seccion2-grid2; }
+
+.seccion3 {
+  grid-area: seccion3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "seccion3-grid1 seccion3-grid2";
+  border: 2px solid #9a4c95; }
+  .seccion3 .seccion3-grid1 {
+    grid-area: seccion3-grid1; }
+  .seccion3 .seccion3-grid2 {
+    grid-area: seccion3-grid2; }
+
 /* ------------------------------------------ */
 /* -------query de la pagina inicio--------- */
 /* ---------------------------------------- */

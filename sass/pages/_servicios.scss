@@ -1,89 +1,94 @@
 .services {
-    margin-bottom: 48px;
-    padding-top: 13px;
+  margin-bottom: 48px;
+  padding-top: 13px;
 
-    &__grid {
-        height: 85vh;
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-        "servione servione servitwo servitwo servinoti"
-        "servithree servithree servifour servifour servinoti";
-    }
+  &__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "servione servione servitwo servitwo servinoti"
+      "servithree servithree servifour servifour servinoti";
+    justify-items: center;
+    align-items: center;
+  }
 
-    &__control {
-        box-shadow: 6px 2px 14px -1px rgba(0, 0, 0, 0.7);
-        display: flex;
-        border-radius: 1rem;
-    }
+  &__control {
+    -webkit-box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.59);
+    box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.59);
+    display: flex;
+    border-radius: 1rem;
+  }
 
-    &__contenido {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
+  &__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 
-    &__texts {
-        display: flex;
-        flex-direction: column;
+  &__texts {
+    display: flex;
+    flex-direction: column;
+  }
 
-    }
+  &__encabezado {
+    padding: 1rem 0;
+  }
 
-    &__encabezado {
-        padding: 1rem 0;
-    }
+  &__pie {
+    padding: 2rem;
+  }
 
-    &__pie {
-        padding: 2rem;
-    }
+  &__img {
+    padding: 1.5rem;
+    width: 23rem;
+    height: 29rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
 
-    &__img {
-        padding: 1.5rem;
-        width: 23rem;
-        height: 29rem;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 2rem;
-        
-    }
+  &__title {
+    color: #0c0708;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem;
+    padding-top: 0px;
+  }
 
-    &__title {
-        color: #FF1053;
-        text-align: center;
-        font-size: 2.5rem;
-        font-family: "Fredoka One", cursive;
-        padding: 1rem;
-    }
+  &__subtitle {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
 
-    &__subtitle {
-        font-size: 2rem;
-        font-family: "Fredoka One", cursive;
-        
-        color: #09E85E;
-    }
+    color: #320d6d;
+  }
 
-    &__paragrafo {
-        font-size: 1.5rem;
-        font-family: "Gothic A1", sans-serif;
-    }
+  &__paragrafo {
+    font-size: 1.5rem;
+    font-family: "Gothic A1", sans-serif;
+    text-align: justify;
+    padding-right: 16px;
+  }
 
-    &__price {
-        font-size: 3rem;
-        letter-spacing: 2px;
-        text-align: end;
-        font-family: "Fredoka One", cursive;
-    }
+  &__price {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-align: end;
+    font-family: "Fredoka One", cursive;
+  }
 
-    &__minparagrafo {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        text-align: end;
-        font-family: "Fredoka One", cursive;
-    }
+  &__minparagrafo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: end;
+    font-family: "Fredoka One", cursive;
+  }
 }
 
 .btn-buy {
@@ -92,135 +97,228 @@
   font-size: 1.3rem;
   font-weight: 700;
   padding: 0.5rem 7rem;
-  background: #44CF6C;
-  border: none;
+  background: #320d6d;
+  border: 1px solid $color-negro;
   outline: none;
   border-radius: 3rem;
   cursor: pointer;
-  box-shadow: 6px 5px 14px -1px rgba(0, 0, 0, 0.7);
+  /* box-shadow: 6px 5px 14px -1px rgba(0, 0, 0, 0.7); */
   transition: all 0.2s;
 
   &:hover {
-    background: #A9FDAC;
+    background: #a9fdac;
     box-shadow: none;
   }
 }
 
 .servione {
-    grid-area: servione;
-
+  grid-area: servione;
 }
 
 .servitwo {
-    grid-area: servitwo ;
+  grid-area: servitwo;
 }
 
 .servithree {
-    grid-area: servithree;
+  grid-area: servithree;
 }
 
 .servifour {
-    grid-area: servifour;
+  grid-area: servifour;
 }
 
 .servinoti {
-    grid-area: servinoti;
+  grid-area: servinoti;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    -1px 4px 16px 2px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, -1px 4px 16px 2px rgba(0, 0, 0, 0);
 
-    &__ul {
-        list-style-type: none
+  &__ul {
+    list-style-type: none;
+  }
+
+  &__li {
+    margin-bottom: 1.5rem;
+  }
+
+  &__noticia {
+    padding: 15px 20px 20px;
+  }
+
+  &__lista {
+    padding-left: 95px;
+    position: relative;
+    min-height: 80px;
+    padding-top: 5px;
+  }
+
+  &__img {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 0.5rem;
+  }
+
+  &__span {
+    line-height: 2rem;
+    background-color: #e0ff4f;
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    border-radius: 0 10px 0 0;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 700;
+    padding: 0 8px;
+  }
+
+  &__top {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -1px;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 700;
+    max-height: 4.5rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  &__btn {
+    background-color: rgba(1, 188, 242, 0.1);
+    color: #01bcf2;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    line-height: 2rem;
+    text-decoration: none;
+    transition: all 0.2s linear;
+
+    &:hover {
+      color: #ffffff;
+      background-color: rgba(1, 242, 242, 0.918);
     }
-
-    &__li {
-        margin-bottom: 1.5rem;
-    }
-
-    &__noticia {
-        padding: 15px 20px 20px;
-    }
-
-    &__lista {
-        padding-left: 95px;
-        position: relative;
-        min-height: 80px;
-        padding-top: 5px;
-    }
-
-    &__img {
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 8rem;
-        height: 8rem;
-        border-radius: .5rem;
-    }
-
-    &__span {
-        line-height: 2rem;
-        background-color: #E0FF4F;
-        position: absolute;
-        left: -2px;
-        bottom: -2px;
-        border-radius: 0 10px 0 0;
-        font-size: 1rem;
-        color: #000;
-        font-weight: 700;
-        padding: 0 8px;
-    }
-
-    &__top {
-        font-size: 1.5rem;
-        font-weight: 700;
-        line-height: 3rem;
-        letter-spacing: -1px;
-    }
-
-    &__title {
-        font-size: 1.2rem;
-        font-family: "Gothic A1", sans-serif;
-        font-weight: 700;
-        max-height: 4.5rem;
-        overflow: hidden;
-        margin-bottom: 1rem;
-    }
-
-    &__btn {
-        background-color: rgba(1,188,242,.1);
-        color: #01bcf2;
-        font-size: 1rem;
-        font-weight: 700;
-        border-radius: 2rem;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 1rem;
-        margin-bottom: 1rem;
-        padding: 0 1rem;
-        line-height: 2rem;
-        text-decoration: none;
-        transition: all .2s linear;
-
-        &:hover {
-            color: #ffffff;
-            background-color: rgba(1, 242, 242, 0.918);
-        }
-    }
+  }
 }
 
 /* ========seccion clientes======== */
 
-/* .nuestros {
-    margin-bottom: 48px;
-    padding-top: 13px;
+.nuestros {
+  margin-bottom: 48px;
+  padding-top: 13px;
 
-    &__grid {
-        height: 85vh;
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-        "servione servione servitwo servitwo servinoti"
-        "servithree servithree servifour servifour servinoti";
-    }
+  &__control {
+  }
 
-} */
+  &__grid {
+    height: 80vh;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "seccion1 seccion1 seccion2 seccion2"
+      "seccion1 seccion1 seccion3 seccion3";
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+
+  &__imagen {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  &__subtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: 2.9rem;
+    text-align: center;
+    color: #fbf5f3;
+  }
+
+  &__texts {
+    padding-left: 1rem;
+  }
+
+  &__mintitle {
+    font-size: 2.2rem;
+  }
+
+  &__paragrafo {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-right: 1rem;
+  }
+}
+
+.seccion1 {
+  grid-area: seccion1;
+  position: relative;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    -1px 4px 16px 2px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, -1px 4px 16px 2px rgba(0, 0, 0, 0);
+}
+
+.seccion2 {
+  grid-area: seccion2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "seccion2-grid1 seccion2-grid2";
+  border: 2px solid #9a4c95;
+
+  .seccion2-grid1 {
+    grid-area: seccion2-grid1;
+  }
+
+  .seccion2-grid2 {
+    grid-area: seccion2-grid2;
+  }
+}
+
+.seccion3 {
+  grid-area: seccion3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "seccion3-grid1 seccion3-grid2";
+  border: 2px solid #9a4c95;
+
+  .seccion3-grid1 {
+    grid-area: seccion3-grid1;
+  }
+
+  .seccion3-grid2 {
+    grid-area: seccion3-grid2;
+  }
+}
