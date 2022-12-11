@@ -1,0 +1,9 @@
+@mixin style-link-text($color) {
+  color: $color;
+}
+
+@mixin style-link-btn($color) {
+  border: 0.2rem solid $color;
+  color: $color;
+  background-color: $color-blanco;
+}

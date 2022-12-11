@@ -168,6 +168,11 @@
   }
 
   &__boton {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  &__boton {
     @extend %btn-placeholder;
   }
 }
@@ -176,7 +181,7 @@
 /* ---------header pagina servicios--------- */
 /* ---------------------------------------- */
 
-.heading{
+.heading {
   height: 100vh;
   background-image: linear-gradient(
       to right,
@@ -244,6 +249,11 @@
     border-radius: 50px;
     outline: none;
     border: 2px solid $color-blanco;
+  }
+
+  &__boton {
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 
   &__boton {

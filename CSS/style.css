@@ -104,7 +104,6 @@ body {
 /* ===home: seccion portafolio=== */
 .portafolio__title {
   padding: 1rem;
-  font-size: 2rem;
   letter-spacing: 0.2rem;
   font-size: 2rem; }
 
@@ -224,7 +223,6 @@ body {
   font-weight: 700;
   padding: 0.5rem 1rem;
   background: #fcff6c;
-  border: none;
   outline: none;
   border-radius: 3rem;
   cursor: pointer;
@@ -404,6 +402,9 @@ body {
     border-radius: 50px;
     outline: none;
     border: 2px solid #ffffff; }
+  .headline__boton {
+    padding-top: 7px;
+    padding-bottom: 7px; }
 
 /* ------------------------------------------ */
 /* ---------header pagina servicios--------- */
@@ -458,6 +459,9 @@ body {
     border-radius: 50px;
     outline: none;
     border: 2px solid #ffffff; }
+  .heading__boton {
+    padding-top: 7px;
+    padding-bottom: 7px; }
 
 .nav {
   height: 7rem;
@@ -473,8 +477,9 @@ body {
   .nav__titulo {
     color: #000000;
     font-size: 2.5rem; }
+  .nav .nav__titulo--producto {
+    color: #ffffff; }
   .nav__link {
-    color: #000000;
     text-decoration: none;
     margin-left: 1em;
     display: inline-block;
@@ -488,13 +493,14 @@ body {
       transform: translateY(-0.3rem); }
     .nav__link:active {
       transform: translateY(-0.1rem); }
+  .nav .nav__link--color {
+    color: #ffffff; }
   .nav__link--boton:visited, .nav__link--boton:link {
     text-transform: uppercase;
     font-weight: 700;
     padding: 0.4rem 0.7rem;
     background: #fcff6c;
     border: 0.2rem solid #000000;
-    border-radius: 10rem;
     cursor: pointer;
     color: #000000;
     display: inline-block;
@@ -506,6 +512,11 @@ body {
     .nav__link--boton:visited:active, .nav__link--boton:link:active {
       transform: translateY(-0.1rem);
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .nav .nav__style--btn:visited,
+  .nav .nav__style--btn:link {
+    border: 0.2rem solid #ff5666;
+    color: #ff5666;
+    background-color: #ffffff; }
   .nav__pintura {
     width: 4rem;
     margin-right: 0.7rem; }
@@ -625,7 +636,6 @@ body {
     border-radius: 1rem; }
   .portafolio__title {
     padding: 1rem;
-    font-size: 2rem;
     letter-spacing: 0.2rem;
     font-size: 2rem; }
   .portafolio__paragrafo {
@@ -646,7 +656,6 @@ body {
 .layouts {
   background: #fefdff; }
   .layouts__control {
-    display: inline-block;
     /* width: 100%; */
     display: flex;
     background: #ede574;
@@ -1238,7 +1247,6 @@ body {
     align-items: center; }
   .headline__titulo {
     text-align: center;
-    font-size: 2rem;
     font-size: 3rem;
     padding-bottom: 30px;
     padding: 0; }
