@@ -521,6 +521,11 @@ body {
     margin-right: 0.6rem; }
   .nav__label, .nav__input {
     display: none; }
+  .nav .servi__style--btn:visited,
+  .nav .servi__style--btn:link {
+    border: 0.2rem solid #26dfd0;
+    color: #26dfd0;
+    background-color: #ffffff; }
 
 @media (max-width: 962px) {
   .nav__label {
@@ -576,6 +581,10 @@ body {
     box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.59); }
   .about__picture {
     margin-bottom: 3rem; }
+  .about__cta {
+    border: 0.2rem solid #ff5666;
+    color: #ff5666;
+    background-color: #ffffff; }
 
 /* ========seccion gallery======== */
 .gallery {
@@ -695,6 +704,9 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
     gap: 3rem;
     justify-content: center; }
+  .opinion__mensaje {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px 4px 16px 2px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, -1px 4px 16px 2px rgba(0, 0, 0, 0); }
   .opinion__control {
     display: flex;
     align-items: center; }
@@ -727,7 +739,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 0.7rem; }
+    border-radius: 0.7rem;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px 4px 16px 2px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, -1px 4px 16px 2px rgba(0, 0, 0, 0); }
   .noticias__imagenUno {
     background-image: url("../img/warzoneNoti.jpg");
     width: 24vw;
@@ -802,7 +816,8 @@ body {
   letter-spacing: 1px; }
 
 .fa-solid:hover {
-  background: #f8333c; }
+  background: #f8333c;
+  box-shadow: 0px 5px 15px -2px rgba(0, 0, 0, 0.27); }
 
 .card1 {
   grid-area: card1;
@@ -850,10 +865,11 @@ body {
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "servione servione servitwo servitwo servinoti" "servithree servithree servifour servifour servinoti";
     justify-items: center;
-    align-items: center; }
+    align-items: center;
+    align-items: stretch; }
   .services__control {
-    -webkit-box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.59);
-    box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.59);
+    /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); */
+    box-shadow: -1px 2px 7px 1px rgba(0, 0, 0, 0.31);
     display: flex;
     border-radius: 1rem; }
   .services__contenido {
@@ -879,7 +895,7 @@ body {
     padding-top: 15px;
     padding-bottom: 0px; }
   .services__title {
-    color: #0c0708;
+    color: #ff2768;
     text-align: center;
     font-size: 2.2rem;
     font-family: "Poppins", sans-serif;
@@ -888,7 +904,7 @@ body {
   .services__subtitle {
     font-size: 2rem;
     font-family: "Poppins", sans-serif;
-    color: #320d6d; }
+    color: #05e0e9; }
   .services__paragrafo {
     font-size: 1.5rem;
     font-family: "Gothic A1", sans-serif;
@@ -911,16 +927,17 @@ body {
   font-size: 1.3rem;
   font-weight: 700;
   padding: 0.5rem 7rem;
-  background: #320d6d;
-  border: 1px solid #000000;
+  background: #4e1a3d;
   outline: none;
   border-radius: 3rem;
   cursor: pointer;
   /* box-shadow: 6px 5px 14px -1px rgba(0, 0, 0, 0.7); */
   transition: all 0.2s; }
   .btn-buy:hover {
-    background: #a9fdac;
-    box-shadow: none; }
+    background: #26dfd0;
+    box-shadow: none;
+    border: none;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.29); }
 
 .servione {
   grid-area: servione; }
@@ -936,8 +953,7 @@ body {
 
 .servinoti {
   grid-area: servinoti;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px 4px 16px 2px rgba(0, 0, 0, 0);
-  box-shadow: 0px 10px 13px -7px #000000, -1px 4px 16px 2px rgba(0, 0, 0, 0); }
+  box-shadow: 1px 2px 14px -4px rgba(0, 0, 0, 0.75); }
   .servinoti__ul {
     list-style-type: none; }
   .servinoti__li {
@@ -1055,7 +1071,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-template-areas: "seccion2-grid1 seccion2-grid2";
-  border: 2px solid #9a4c95; }
+  box-shadow: 3px 4px 15px -7px black; }
   .seccion2 .seccion2-grid1 {
     grid-area: seccion2-grid1; }
   .seccion2 .seccion2-grid2 {
@@ -1067,7 +1083,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-template-areas: "seccion3-grid1 seccion3-grid2";
-  border: 2px solid #9a4c95; }
+  box-shadow: 3px 4px 15px -7px black; }
   .seccion3 .seccion3-grid1 {
     grid-area: seccion3-grid1; }
   .seccion3 .seccion3-grid2 {
