@@ -149,7 +149,7 @@ body {
   padding-top: 1rem;
   font-size: 1.1rem; }
 
-/* ===page home: seccion noticias=== */
+/* ===home: seccion noticias=== */
 .noticias__titulo {
   font-size: 3.5rem;
   margin-bottom: 3rem;
@@ -215,6 +215,88 @@ body {
 
 .text {
   font-size: 1rem; }
+
+/* ------------------------------------------ */
+/* ----tipografia de la pagina servicios----- */
+/* ---------------------------------------- */
+/* ===servicio: seccion services=== */
+.services__texts {
+  display: flex;
+  flex-direction: column; }
+
+.services__title {
+  color: #ff2768;
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+  padding-top: 0px; }
+
+.services__subtitle {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #05e0e9; }
+
+.services__paragrafo {
+  font-size: 1.5rem;
+  font-family: "Gothic A1", sans-serif;
+  text-align: justify;
+  padding-right: 16px; }
+
+/* ===servicio: services -> noticias=== */
+.servinoti__span {
+  line-height: 2rem;
+  background-color: #e0ff4f;
+  position: absolute;
+  left: -2px;
+  bottom: -2px;
+  border-radius: 0 10px 0 0;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 700;
+  padding: 0 8px; }
+
+.servinoti__top {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: -1px; }
+
+.servinoti__title {
+  font-size: 1.2rem;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 700;
+  max-height: 4.5rem;
+  overflow: hidden;
+  margin-bottom: 1rem; }
+
+/* ===servicio: seccion clientes=== */
+.nuestros__title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem; }
+
+.nuestros__subtitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-size: 2.9rem;
+  text-align: center;
+  color: #fbf5f3; }
+
+.nuestros__texts {
+  padding-left: 1rem; }
+
+.nuestros__mintitle {
+  font-size: 2.2rem; }
+
+.nuestros__paragrafo {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding-right: 1rem; }
 
 .hero__boton, .headline__boton, .heading__boton, .about__cta {
   text-decoration: none;
@@ -877,9 +959,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end; }
-  .services__texts {
-    display: flex;
-    flex-direction: column; }
   .services__encabezado {
     padding: 1rem 0; }
   .services__pie {
@@ -894,22 +973,6 @@ body {
     border-radius: 2rem;
     padding-top: 15px;
     padding-bottom: 0px; }
-  .services__title {
-    color: #ff2768;
-    text-align: center;
-    font-size: 2.2rem;
-    font-family: "Poppins", sans-serif;
-    padding: 1rem;
-    padding-top: 0px; }
-  .services__subtitle {
-    font-size: 2rem;
-    font-family: "Poppins", sans-serif;
-    color: #05e0e9; }
-  .services__paragrafo {
-    font-size: 1.5rem;
-    font-family: "Gothic A1", sans-serif;
-    text-align: justify;
-    padding-right: 16px; }
   .services__price {
     font-size: 3rem;
     letter-spacing: 2px;
@@ -951,6 +1014,7 @@ body {
 .servifour {
   grid-area: servifour; }
 
+/* ========seccion clientes -> noticias======== */
 .servinoti {
   grid-area: servinoti;
   box-shadow: 1px 2px 14px -4px rgba(0, 0, 0, 0.75); }
@@ -973,29 +1037,6 @@ body {
     width: 8rem;
     height: 8rem;
     border-radius: 0.5rem; }
-  .servinoti__span {
-    line-height: 2rem;
-    background-color: #e0ff4f;
-    position: absolute;
-    left: -2px;
-    bottom: -2px;
-    border-radius: 0 10px 0 0;
-    font-size: 1rem;
-    color: #000;
-    font-weight: 700;
-    padding: 0 8px; }
-  .servinoti__top {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 3rem;
-    letter-spacing: -1px; }
-  .servinoti__title {
-    font-size: 1.2rem;
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 700;
-    max-height: 4.5rem;
-    overflow: hidden;
-    margin-bottom: 1rem; }
   .servinoti__btn {
     background-color: rgba(1, 188, 242, 0.1);
     color: #01bcf2;
@@ -1050,14 +1091,6 @@ body {
     font-size: 2.9rem;
     text-align: center;
     color: #fbf5f3; }
-  .nuestros__texts {
-    padding-left: 1rem; }
-  .nuestros__mintitle {
-    font-size: 2.2rem; }
-  .nuestros__paragrafo {
-    font-size: 1.5rem;
-    text-align: justify;
-    padding-right: 1rem; }
 
 .seccion1 {
   grid-area: seccion1;

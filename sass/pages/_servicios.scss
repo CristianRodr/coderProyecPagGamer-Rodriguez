@@ -29,11 +29,6 @@
     align-items: flex-end;
   }
 
-  &__texts {
-    display: flex;
-    flex-direction: column;
-  }
-
   &__encabezado {
     padding: 1rem 0;
   }
@@ -52,29 +47,6 @@
     border-radius: 2rem;
     padding-top: 15px;
     padding-bottom: 0px;
-  }
-
-  &__title {
-    color: #ff2768;
-    text-align: center;
-    font-size: 2.2rem;
-    font-family: "Poppins", sans-serif;
-    padding: 1rem;
-    padding-top: 0px;
-  }
-
-  &__subtitle {
-    font-size: 2rem;
-    font-family: "Poppins", sans-serif;
-
-    color: #05e0e9;
-  }
-
-  &__paragrafo {
-    font-size: 1.5rem;
-    font-family: "Gothic A1", sans-serif;
-    text-align: justify;
-    padding-right: 16px;
   }
 
   &__price {
@@ -129,6 +101,7 @@
   grid-area: servifour;
 }
 
+/* ========seccion clientes -> noticias======== */
 .servinoti {
   grid-area: servinoti;
   box-shadow: 1px 2px 14px -4px rgba(0, 0, 0, 0.75);
@@ -160,35 +133,6 @@
     width: 8rem;
     height: 8rem;
     border-radius: 0.5rem;
-  }
-
-  &__span {
-    line-height: 2rem;
-    background-color: #e0ff4f;
-    position: absolute;
-    left: -2px;
-    bottom: -2px;
-    border-radius: 0 10px 0 0;
-    font-size: 1rem;
-    color: #000;
-    font-weight: 700;
-    padding: 0 8px;
-  }
-
-  &__top {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 3rem;
-    letter-spacing: -1px;
-  }
-
-  &__title {
-    font-size: 1.2rem;
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 700;
-    max-height: 4.5rem;
-    overflow: hidden;
-    margin-bottom: 1rem;
   }
 
   &__btn {
@@ -261,20 +205,6 @@
     font-size: 2.9rem;
     text-align: center;
     color: #fbf5f3;
-  }
-
-  &__texts {
-    padding-left: 1rem;
-  }
-
-  &__mintitle {
-    font-size: 2.2rem;
-  }
-
-  &__paragrafo {
-    font-size: 1.5rem;
-    text-align: justify;
-    padding-right: 1rem;
   }
 }
 

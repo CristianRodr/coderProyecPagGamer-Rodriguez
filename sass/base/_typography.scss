@@ -127,7 +127,7 @@ body {
   }
 }
 
-/* ===page home: seccion noticias=== */
+/* ===home: seccion noticias=== */
 .noticias {
   &__titulo {
     font-size: 3.5rem;
@@ -212,4 +212,106 @@ body {
 
 .text {
   font-size: 1rem;
+}
+
+/* ------------------------------------------ */
+/* ----tipografia de la pagina servicios----- */
+/* ---------------------------------------- */
+
+/* ===servicio: seccion services=== */
+.services {
+  &__texts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: #ff2768;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem;
+    padding-top: 0px;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+
+    color: #05e0e9;
+  }
+
+  &__paragrafo {
+    font-size: 1.5rem;
+    font-family: "Gothic A1", sans-serif;
+    text-align: justify;
+    padding-right: 16px;
+  }
+}
+
+/* ===servicio: services -> noticias=== */
+.servinoti {
+  &__span {
+    line-height: 2rem;
+    background-color: #e0ff4f;
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    border-radius: 0 10px 0 0;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 700;
+    padding: 0 8px;
+  }
+
+  &__top {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -1px;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 700;
+    max-height: 4.5rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+}
+
+/* ===servicio: seccion clientes=== */
+.nuestros {
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: 2.9rem;
+    text-align: center;
+    color: #fbf5f3;
+  }
+
+  &__texts {
+    padding-left: 1rem;
+  }
+
+  &__mintitle {
+    font-size: 2.2rem;
+  }
+
+  &__paragrafo {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-right: 1rem;
+  }
 }
