@@ -3,20 +3,18 @@
 .about {
   background: $color-inicio-fondo;
   padding: 7rem 0;
-  padding-bottom: 12px;
+  padding-bottom: 3rem;
 
   &__secciones {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     align-content: flex-start;
   }
 
   &__seller {
-    width: 90%;
-    height: 40rem;
-    max-width: 55rem;
+    padding-bottom: 1rem;
   }
 
   &__img1 {
@@ -35,7 +33,8 @@
 
   &__cta {
     @extend %btn-placeholder;
-    @include style-link-btn($color-prueba);
+    @include style-link-btn(#010400);
+    margin: 0 1rem;
   }
 }
 
@@ -143,7 +142,6 @@
   background: $color-inicio-fondo;
 
   &__control {
-    /* width: 100%; */
     display: flex;
     background: #ede574;
     background: -webkit-linear-gradient(to right, #e1f5c4, #ede574);
@@ -153,7 +151,7 @@
   }
 
   &__picture {
-    width: 88vw;
+    width: 58vw;
   }
 
   &__img3 {
@@ -184,7 +182,7 @@
 
 /* ========seccion opinion======== */
 .opinion {
-  padding: 7rem;
+  padding: 4rem 7rem 3.6rem 7rem;
   background: $color-inicio-fondo;
 
   &__contenedor {
@@ -255,7 +253,7 @@
 
   &__imagenUno {
     background-image: url("../img/warzoneNoti.jpg");
-    width: 24vw;
+    width: 50rem;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -264,7 +262,7 @@
 
   &__imagenDos {
     background-image: url("../img/grandNoti.jpg");
-    width: 24vw;
+    width: 500px;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -273,7 +271,7 @@
 
   &__imagenTres {
     background-image: url("../img/witcherNoti.jpg");
-    width: 24vw;
+    width: 50rem;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;

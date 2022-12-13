@@ -93,6 +93,28 @@
   }
 }
 
+@media screen and (max-width: 962px) {
+  .hero__main {
+    padding-top: 69px;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .hero {
+    .hero__titulo {
+      font-size: 4rem;
+    }
+
+    .hero__main {
+      justify-content: center;
+    }
+
+    .hero__img {
+      max-width: 100%;
+    }
+  }
+}
+
 /* ------------------------------------------ */
 /* ---------header pagina producto---------- */
 /* ---------------------------------------- */

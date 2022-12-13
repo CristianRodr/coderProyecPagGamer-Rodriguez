@@ -4,18 +4,15 @@
   font-size: 1.2rem;
   font-weight: 700;
   padding: 0.5rem 1rem;
-  background: $color-primario;
+  background: $color-blanco;
   outline: none;
   border-radius: 3rem;
   cursor: pointer;
   border: 0.2rem solid #171d1c;
-  
 
   &:hover {
     color: $color-blanco;
     background: $color-boton-hover;
     border: 0.2rem solid $color-boton-hover;
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   }
 }

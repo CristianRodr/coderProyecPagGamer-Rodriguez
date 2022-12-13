@@ -70,13 +70,16 @@ body {
   font-family: "Fredoka One", cursive;
   font-size: 1.8rem;
   padding-bottom: 0.8rem;
-  color: #1b1b1e; }
+  color: #1b1b1e;
+  padding: 0 1rem;
+  padding-bottom: 0.6rem; }
 
 .about__text {
   margin-bottom: 2rem;
   color: #1b1b1e;
   text-align: justify;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  padding: 0 1rem; }
 
 .about__img1 {
   display: block;
@@ -304,7 +307,7 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   padding: 0.5rem 1rem;
-  background: #fcff6c;
+  background: #ffffff;
   outline: none;
   border-radius: 3rem;
   cursor: pointer;
@@ -312,9 +315,7 @@ body {
   .hero__boton:hover, .headline__boton:hover, .heading__boton:hover, .about__cta:hover {
     color: #ffffff;
     background: #3dfaff;
-    border: 0.2rem solid #3dfaff;
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    border: 0.2rem solid #3dfaff; }
 
 .footer {
   background: #283048;
@@ -430,6 +431,18 @@ body {
     font-size: 1.5rem;
     padding: 1rem;
     color: #ffffff; }
+
+@media screen and (max-width: 962px) {
+  .hero__main {
+    padding-top: 69px; } }
+
+@media screen and (max-width: 636px) {
+  .hero .hero__titulo {
+    font-size: 4rem; }
+  .hero .hero__main {
+    justify-content: center; }
+  .hero .hero__img {
+    max-width: 100%; } }
 
 /* ------------------------------------------ */
 /* ---------header pagina producto---------- */
@@ -610,14 +623,23 @@ body {
     background-color: #ffffff; }
 
 @media (max-width: 962px) {
+  .nav {
+    position: fixed;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background: linear-gradient(to right, #4568dc, #dbced8); }
   .nav__label {
     display: block;
     cursor: pointer; }
   .nav__menu {
     position: fixed;
-    top: 80px;
+    top: 70px;
     bottom: 0;
-    background: #161414;
+    background: linear-gradient(to right, #f0f2f0, #363b53);
     width: 100%;
     left: 0;
     display: flex;
@@ -628,13 +650,6 @@ body {
     transition: clip-path 1s ease-in-out; }
   .nav__input:checked + .nav__menu {
     clip-path: circle(100% at center); }
-  .nav__link--media::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    padding: 2px;
-    background: #ffffff; }
   .headline__wave {
     width: 100%; } }
 
@@ -642,17 +657,15 @@ body {
 .about {
   background: #fefdff;
   padding: 7rem 0;
-  padding-bottom: 12px; }
+  padding-bottom: 3rem; }
   .about__secciones {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     align-content: flex-start; }
   .about__seller {
-    width: 90%;
-    height: 40rem;
-    max-width: 55rem; }
+    padding-bottom: 1rem; }
   .about__img1 {
     display: block;
     width: 20rem;
@@ -664,9 +677,10 @@ body {
   .about__picture {
     margin-bottom: 3rem; }
   .about__cta {
-    border: 0.2rem solid #ff5666;
-    color: #ff5666;
-    background-color: #ffffff; }
+    border: 0.2rem solid #010400;
+    color: #010400;
+    background-color: #ffffff;
+    margin: 0 1rem; }
 
 /* ========seccion gallery======== */
 .gallery {
@@ -746,14 +760,13 @@ body {
 .layouts {
   background: #fefdff; }
   .layouts__control {
-    /* width: 100%; */
     display: flex;
     background: #ede574;
     background: -webkit-linear-gradient(to right, #e1f5c4, #ede574);
     background: linear-gradient(to right, #e1f5c4, #ede574);
     align-items: center; }
   .layouts__picture {
-    width: 88vw; }
+    width: 58vw; }
   .layouts__img3 {
     margin: 5rem;
     width: 85%;
@@ -776,7 +789,7 @@ body {
 
 /* ========seccion opinion======== */
 .opinion {
-  padding: 7rem;
+  padding: 4rem 7rem 3.6rem 7rem;
   background: #fefdff; }
   .opinion__contenedor {
     width: 100%;
@@ -826,21 +839,21 @@ body {
     box-shadow: 0px 10px 13px -7px #000000, -1px 4px 16px 2px rgba(0, 0, 0, 0); }
   .noticias__imagenUno {
     background-image: url("../img/warzoneNoti.jpg");
-    width: 24vw;
+    width: 50rem;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
   .noticias__imagenDos {
     background-image: url("../img/grandNoti.jpg");
-    width: 24vw;
+    width: 500px;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
   .noticias__imagenTres {
     background-image: url("../img/witcherNoti.jpg");
-    width: 24vw;
+    width: 50rem;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -1134,14 +1147,21 @@ body {
       font-size: 5rem; } }
 
 /* ===home: MediaQuery seccion about=== */
+@media screen and (max-width: 768px) {
+  .about__secciones {
+    display: flex;
+    flex-wrap: nowrap; }
+  .about__titulo {
+    font-size: 3rem; }
+  .about__subtitulo {
+    padding-bottom: 0.6rem; } }
+
 @media screen and (max-width: 500px) {
   .about__secciones {
+    flex-wrap: wrap;
     justify-content: center; }
   .about__titulo {
-    font-size: 2rem; }
-  .about__secciones {
-    width: 45rem;
-    height: 83.7rem; }
+    font-size: 2.5rem; }
   .about__seller--separador {
     margin-bottom: 3rem; } }
 
@@ -1156,11 +1176,6 @@ body {
     font-size: 1.3rem; } }
 
 @media screen and (max-width: 963px) {
-  .contenedor {
-    width: 95%;
-    max-width: 80rem;
-    overflow: hidden;
-    margin: 0 auto; }
   .portafolio {
     padding-top: 5rem;
     padding-bottom: 1rem; }
@@ -1171,15 +1186,15 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "nota nota nota" "nota nota nota" "member1 member2 member3" "member4 member5 member6" "member7 member8 member9";
     gap: 1rem;
     place-items: center; }
   .portafolio__informacion {
     height: 50rem;
     gap: 2rem;
-    width: 84%;
-    margin: 0 auto; }
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1.4rem; }
   .portafolio__picture {
     width: 21rem;
     height: 18rem; }
@@ -1204,12 +1219,59 @@ body {
   .member9 {
     grid-area: member9; } }
 
+@media screen and (max-width: 699px) {
+  .portafolio__grid {
+    margin-top: 15px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "nota nota nota" "nota nota nota" "member1 member2 member3" "member4 member5 member6" "member7 member8 member9";
+    gap: 1rem;
+    place-items: center; }
+  .portafolio__informacion {
+    gap: 2rem;
+    margin: 0 auto; }
+  .portafolio__picture {
+    width: 17rem;
+    height: 16rem; } }
+
+@media screen and (max-width: 557px) {
+  .portafolio__grid {
+    margin-top: 15px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "nota nota " "nota nota " "member1 member2" "member3 member4" "member5 member6" "member7 member8" "member9 .";
+    gap: 1rem;
+    place-items: center; }
+  .portafolio__picture {
+    width: 22rem;
+    height: 18rem; } }
+
+@media screen and (max-width: 475px) {
+  .portafolio__picture {
+    width: 19rem;
+    height: 17rem; }
+  .portafolio__paragrafo {
+    font-size: 1.4rem; } }
+
+@media screen and (max-width: 413px) {
+  .portafolio__picture {
+    width: 16rem;
+    height: 12rem; }
+  .portafolio__paragrafo {
+    font-size: 1.2rem; } }
+
 /* ===home: MediaQuery seccion layout=== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 774px) {
+  .layouts__control {
+    margin-top: 22px; }
   .layouts__title {
     font-size: 2rem; }
   .layouts__img3 {
-    margin: 3rem; }
+    margin: 2rem; }
   .layouts__paragrafo {
     font-size: 1.5rem;
     margin-bottom: 1.5rem; } }
@@ -1227,7 +1289,7 @@ body {
   .layouts__img3 {
     margin: 5rem;
     margin-bottom: 2rem;
-    width: 70%;
+    width: 60%;
     background-size: cover;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0); }
   .layouts__referido {
@@ -1239,15 +1301,14 @@ body {
     margin-bottom: 1rem; } }
 
 /* ===home: MediaQuery seccion opinion=== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 774px) {
   .opinion {
     padding: 3rem;
     background: #fefdff; } }
 
 @media screen and (max-width: 500px) {
   .opinion {
-    padding: 3rem 0;
-    background: #f4f4ed; }
+    padding: 3rem 0; }
   .opinion__mensaje {
     width: 90%; } }
 
@@ -1260,7 +1321,7 @@ body {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "notiCero notiCero notiCero notiCero" "notiCero notiCero notiCero notiCero" "notiCero notiCero notiCero notiCero" "notiUno notiUno notiDos notiDos" "notiTres notiTres . ."; }
   .noticias__imagenUno {
     background-image: url("../img/warzoneNoti.jpg");
@@ -1283,6 +1344,43 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; } }
+
+@media screen and (max-width: 600px) {
+  .noticias__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "notiCero notiCero notiCero notiCero" "notiCero notiCero notiCero notiCero" "notiCero notiCero notiCero notiCero" "notiUno notiUno notiUno notiUno" "notiDos notiDos notiDos notiDos" "notiTres notiTres notiTres notiTres"; }
+  .noticias__imagenUno {
+    background-image: url("../img/warzoneNoti.jpg");
+    width: 100vw;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .noticias__imagenDos {
+    background-image: url("../img/grandNoti.jpg");
+    width: 100vw;
+    height: 15vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .noticias__imagenTres {
+    background-image: url("../img/witcherNoti.jpg");
+    width: 100vw;
+    height: 15vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+
+@media screen and (max-width: 425px) {
+  .noticias__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "notiCero notiCero notiCero notiCero" "notiCero notiCero notiCero notiCero" "notiCero notiCero notiCero notiCero" "notiUno notiUno notiUno notiUno" "notiDos notiDos notiDos notiDos" "notiTres notiTres notiTres notiTres"; } }
 
 /* ------------------------------------------ */
 /* -------query de la pagina producto------- */
