@@ -4,6 +4,7 @@
   background: linear-gradient(to bottom, #fefdff, #283048);
   color: $color-blanco;
   text-align: center;
+  margin-top: 13px;
 
   .title {
     padding-bottom: 2rem;
@@ -67,8 +68,39 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__img {
+    order: -1;
+    width: 45%;
+    margin-bottom: 30px;
+  }
+
+  .footer__picture {
+    width: 80%;
+  }
+
+  .footer__texts {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .title {
     margin-top: 2.7rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer__img {
+    width: 90%;
+  }
+
+  .footer__img {
+    max-width: 330px;
+    margin-bottom: 40px;
   }
 }

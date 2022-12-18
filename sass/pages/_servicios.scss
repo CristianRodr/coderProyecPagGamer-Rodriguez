@@ -6,7 +6,7 @@
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-areas:
       "servione servione servitwo servitwo servinoti"
       "servithree servithree servifour servifour servinoti";
@@ -87,24 +87,32 @@
 
 .servione {
   grid-area: servione;
+  height: 65%;
+  border: 0.2rem solid #4e1a3d;
 }
 
 .servitwo {
   grid-area: servitwo;
+  height: 65%;
+  border: 0.2rem solid #4e1a3d;
 }
 
 .servithree {
   grid-area: servithree;
+  height: 65%;
+  border: 0.2rem solid #4e1a3d;
 }
 
 .servifour {
   grid-area: servifour;
+  height: 65%;
+  border: 0.2rem solid #4e1a3d;
 }
 
 /* ========seccion clientes -> noticias======== */
 .servinoti {
   grid-area: servinoti;
-  box-shadow: 1px 2px 14px -4px rgba(0, 0, 0, 0.75);
+  border: 0.3rem solid #01bcf2;
 
   &__ul {
     list-style-type: none;
@@ -164,7 +172,7 @@
   padding-top: 13px;
 
   &__grid {
-    height: 80vh;
+    /* height: 80vh; */
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(4, 1fr);

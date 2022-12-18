@@ -7,10 +7,16 @@
   .hero {
     height: 100vh;
     clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+  }
+}
 
-    &__titulo {
-      font-size: 5rem;
-    }
+@media screen and (max-width: 963px) {
+  .headline {
+  }
+}
+
+@media screen and (max-width: 963px) {
+  .heading {
   }
 }
 
@@ -47,12 +53,12 @@
 
 /* ===home: MediaQuery seccion portafolio=== */
 @media screen and (max-width: 1024px) {
-  .contenedor {
+  /* .contenedor {
     width: 95%;
     max-width: 98rem;
     overflow: hidden;
     margin: 0 auto;
-  }
+  } */
 
   .portafolio__paragrafo {
     font-size: 1.3rem;
@@ -287,6 +293,12 @@
   }
 }
 
+@media screen and (max-width: 375px) {
+  .opinion__mensaje {
+    width: 80%;
+  }
+}
+
 /* ===home: MediaQuery seccion noticias=== */
 @media screen and (max-width: 768px) {
   .noticias {
@@ -418,7 +430,71 @@
 }
 
 /* ===producto: MediaQuery seccion producto tipografia=== */
+@media screen and (max-width: 1162px) {
+  .fa-sack-dollar {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 966px) {
+  .fa-sack-dollar {
+    font-size: 1.1rem;
+  }
+
+  .juego {
+    font-size: 1.3rem;
+  }
+
+  .product__img {
+    height: 379px;
+  }
+
+  .card1 {
+    height: 474px;
+  }
+
+  .card2 {
+    height: 474px;
+  }
+
+  .card3 {
+    height: 474px;
+  }
+
+  .card4 {
+    height: 474px;
+  }
+
+  .card5 {
+    height: 474px;
+  }
+
+  .card6 {
+    height: 474px;
+  }
+
+  .card7 {
+    height: 474px;
+  }
+
+  .card8 {
+    height: 474px;
+  }
+
+  .card9 {
+    height: 474px;
+  }
+}
+
 @media screen and (max-width: 818px) {
+  .headline__titulo {
+    font-size: 2.5rem;
+  }
+
+  .product__img {
+    height: 336px;
+  }
+
   .precio {
     font-size: 1.5rem;
   }
@@ -434,8 +510,151 @@
   .text {
     font-size: 0.8rem;
   }
+
+  .card1 {
+    height: 405px;
+  }
+
+  .card2 {
+    height: 405px;
+  }
+
+  .card3 {
+    height: 405px;
+  }
+
+  .card4 {
+    height: 405px;
+  }
+
+  .card5 {
+    height: 405px;
+  }
+
+  .card6 {
+    height: 405px;
+  }
+
+  .card7 {
+    height: 405px;
+  }
+
+  .card8 {
+    height: 405px;
+  }
+
+  .card9 {
+    height: 405px;
+  }
 }
 
+@media screen and (max-width: 706px) {
+  .fa-sack-dollar {
+    font-size: 1rem;
+  }
+
+  .product__img {
+    height: 279px;
+  }
+
+  .card1 {
+    height: 348px;
+  }
+
+  .card2 {
+    height: 348px;
+  }
+
+  .card3 {
+    height: 348px;
+  }
+
+  .card4 {
+    height: 348px;
+  }
+
+  .card5 {
+    height: 348px;
+  }
+
+  .card6 {
+    height: 348px;
+  }
+
+  .card7 {
+    height: 348px;
+  }
+
+  .card8 {
+    height: 348px;
+  }
+
+  .card9 {
+    height: 348px;
+  }
+}
+
+@media screen and (max-width: 706px) {
+  .fa-sack-dollar {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 632px) {
+  .product__grid {
+    /* width: 85%; */
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8"
+      "card9 .";
+  }
+
+  .product__img {
+    height: 315px;
+  }
+
+  .card1 {
+    height: 382px;
+  }
+
+  .card2 {
+    height: 382px;
+  }
+
+  .card3 {
+    height: 382px;
+  }
+
+  .card4 {
+    height: 382px;
+  }
+
+  .card5 {
+    height: 382px;
+  }
+
+  .card6 {
+    height: 382px;
+  }
+
+  .card7 {
+    height: 382px;
+  }
+
+  .card8 {
+    height: 382px;
+  }
+
+  .card9 {
+    height: 382px;
+  }
+}
 /* ===producto: MediaQuery seccion producto grid=== */
 @media screen and (max-width: 500px) {
   .product__grid {
@@ -443,6 +662,7 @@
     height: 100%;
     display: grid;
     gap: 30px;
+    justify-items: center;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas:
@@ -455,5 +675,509 @@
       "card7"
       "card8"
       "card9";
+  }
+
+  .product__img {
+    height: 384px;
+  }
+
+  .fa-sack-dollar {
+    font-size: 1.2rem;
+  }
+
+  .juego {
+    font-size: 1.3rem;
+  }
+
+  .card1 {
+    width: 77%;
+    height: 460px;
+  }
+
+  .card2 {
+    width: 77%;
+    height: 460px;
+  }
+
+  .card3 {
+    width: 77%;
+    height: 460px;
+  }
+
+  .card4 {
+    width: 77%;
+    height: 460px;
+  }
+
+  .card5 {
+    width: 77%;
+    height: 460px;
+  }
+
+  .card6 {
+    width: 77%;
+    height: 460px;
+  }
+
+  .card7 {
+    width: 77%;
+    height: 460px;
+  }
+
+  .card8 {
+    width: 77%;
+    height: 460px;
+  }
+
+  .card9 {
+    width: 77%;
+    height: 460px;
+  }
+}
+
+/* ------------------------------------------ */
+/* ------query de la pagina Servicios------- */
+/* ---------------------------------------- */
+
+@media screen and (max-width: 1303px) {
+  .servione {
+    grid-area: servione;
+    height: 59%;
+  }
+
+  .servitwo {
+    grid-area: servitwo;
+    width: 101%;
+    height: 59%;
+  }
+
+  .servithree {
+    grid-area: servithree;
+    width: 101%;
+    height: 59%;
+  }
+
+  .servifour {
+    grid-area: servifour;
+    width: 101%;
+    height: 59%;
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  .services__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "servione servione servitwo servitwo servinoti"
+      "servithree servithree servifour servifour servinoti";
+    justify-items: center;
+    align-items: center;
+    align-items: stretch;
+  }
+
+  .services__encabezado {
+    margin-bottom: 8px;
+  }
+
+  .services__paragrafo {
+    font-size: 1.4rem;
+  }
+
+  .btn-buy {
+    padding: 0.1rem 3rem;
+  }
+
+  .services__price {
+    font-size: 2rem;
+  }
+
+  .servione {
+    grid-area: servione;
+    width: 101%;
+    height: 58%;
+  }
+
+  .servitwo {
+    grid-area: servitwo;
+    width: 101%;
+    height: 58%;
+  }
+
+  .servithree {
+    grid-area: servithree;
+    width: 101%;
+    height: 58%;
+  }
+
+  .servifour {
+    grid-area: servifour;
+    width: 101%;
+    height: 58%;
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  .services__encabezado {
+    margin-bottom: 2px;
+  }
+}
+
+@media screen and (max-width: 1262px) {
+  .services__encabezado {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1253px) {
+  .services__encabezado {
+    margin-bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .services__encabezado {
+    margin-bottom: 0px;
+    padding-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  .services__encabezado {
+    margin-bottom: -8px;
+  }
+}
+
+@media screen and (max-width: 1198px) {
+  .services__encabezado {
+    margin-bottom: -1px;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .services__encabezado {
+    margin-bottom: 24px;
+  }
+
+  .services__paragrafo {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 1188px) {
+  .services__encabezado {
+    margin-bottom: 11px;
+  }
+}
+
+@media screen and (max-width: 1186px) {
+  .services__encabezado {
+    margin-bottom: 11px;
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  .services__encabezado {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 1122px) {
+  .services__encabezado {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 1122px) {
+  .services__img {
+    width: 20rem;
+    height: 28rem;
+  }
+}
+
+@media screen and (max-width: 1096px) {
+  .services__img {
+    width: 19rem;
+    height: 26rem;
+  }
+}
+
+@media screen and (max-width: 1088px) {
+  .services__title {
+    font-size: 2rem;
+  }
+
+  .services__subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1077px) {
+  .services__encabezado {
+    margin-bottom: 4px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .services__paragrafo {
+    font-size: 1.1rem;
+  }
+
+  .services__encabezado {
+    margin-bottom: 44px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .servinoti {
+    grid-area: servinoti;
+    border: 0.3rem solid #01bcf2;
+    width: 100%;
+  }
+
+  .services__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+      "servione servione servitwo servitwo"
+      "servithree servithree servifour servifour"
+      "servinoti servinoti servinoti servinoti";
+    justify-items: center;
+    align-items: center;
+    align-items: stretch;
+  }
+
+  .services__img {
+    .services__img {
+      padding: 1.5rem;
+      width: 16rem;
+      height: 26rem;
+      /* padding-bottom: 0px; */
+    }
+  }
+
+  .services__price {
+    font-size: 1, 7rem;
+  }
+
+  .btn-buy {
+    padding: 0.5rem 5rem;
+  }
+
+  .servione {
+    grid-area: servione;
+    width: 101%;
+    height: 61%;
+  }
+
+  .servitwo {
+    grid-area: servitwo;
+    width: 101%;
+    height: 61%;
+  }
+
+  .servithree {
+    grid-area: servithree;
+    width: 101%;
+    height: 61%;
+  }
+
+  .servifour {
+    grid-area: servifour;
+    width: 101%;
+    height: 61%;
+  }
+
+  .nuestros__mintitle {
+    font-size: 1.5rem;
+  }
+
+  .nuestros__paragrafo {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 942px) {
+  .services__img {
+    width: 18rem;
+    height: 21rem;
+  }
+
+  .services__encabezado {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 836px) {
+  .services__encabezado {
+    margin-bottom: 0px;
+  }
+
+  .btn-buy {
+    padding: 0.5rem 4rem;
+  }
+
+  .services__img {
+    width: 17rem;
+    height: 21rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .services__pie {
+    padding-top: 5px;
+  }
+
+  .nuestros__mintitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .btn-buy {
+    padding: 0.5rem 3rem;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .btn-buy {
+    padding: 0.5rem 2rem;
+  }
+
+  .services__price {
+    font-size: 1.6rem;
+  }
+
+  .services__paragrafo {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .services__img {
+    width: 15rem;
+    /*  height: 19rem; */
+  }
+
+  .services__title {
+    font-size: 1.4rem;
+  }
+
+  .nuestros__mintitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  .services__price {
+    font-size: 1.4rem;
+  }
+
+  .services__minparagrafo {
+    font-size: 1.1rem;
+  }
+
+  .services__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .nuestros__mintitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 643px) {
+  .btn-buy {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .services__price {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .services__title {
+    font-size: 2rem;
+  }
+
+  .services__subtitle {
+    font-size: 1.6rem;
+  }
+
+  .services__paragrafo {
+    font-size: 1.3rem;
+  }
+
+  .services__price {
+    font-size: 2rem;
+  }
+
+  .btn-buy {
+    padding: 0.5rem 3rem;
+    font-size: 1.2rem;
+  }
+
+  .services__minparagrafo {
+    font-size: 1.3rem;
+  }
+
+  .services__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+      "servione servione"
+      "servitwo servitwo"
+      "servithree servithree"
+      "servifour servifour"
+      "servinoti servinoti";
+    justify-items: center;
+    align-items: center;
+    align-items: stretch;
+  }
+
+  .services__img {
+    width: 20rem;
+    height: 26rem;
+  }
+
+  .nuestros__grid {
+    /* height: 80vh; */
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "seccion1 seccion1"
+      "seccion1 seccion1"
+      "seccion2 seccion2"
+      "seccion3 seccion3";
+  }
+
+  .nuestros__mintitle {
+    font-size: 1.6rem;
+  }
+
+  .nuestros__paragrafo {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .services__paragrafo {
+    font-size: 1.2rem;
+  }
+
+  .headline__titulo {
+    font-size: 3rem;
   }
 }
