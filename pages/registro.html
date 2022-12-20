@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>loguin</title>
+    <title>Registro</title>
     <link rel="icon" href="../img/mando.jpg" type="image/png" />
     <link rel="stylesheet" href="../CSS/log-bootstrap.css" />
     <link
@@ -18,10 +18,9 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="../CSS/style.css" /> -->
   </head>
 
-  <body class="text-center body-loguin">
+  <body class="text-center body-registro">
     <nav
       class="shadow-lg navbar navbar-expand-lg navbar-dark bg-primary text-bg-primary bg-gradient"
     >
@@ -118,53 +117,66 @@
       </div>
     </nav>
 
-    <div class="sesion-control shadow-lg">
-      <div class="login shadow-lg">
-        <h1 class="text-center text-dark fw-bolder">
-          INTRODUCE TUS DATOS DE ACCESO
-        </h1>
-
-        <form class="needs-validation">
-          <div class="form-group was-validated">
-            <label class="form-label fw-bold fs-5" for="email"
-              >Correo Electrónico</label
-            >
-            <input
-              class="form-control fw-bold"
-              type="email"
-              id="email"
-              required
-            />
-            <div class="invalid-feedback">dirección de correo electrónico</div>
-          </div>
-          <div class="form-group was-validated">
-            <label class="form-label fs-5 fw-bold" for="password"
-              >Contraseña
-            </label>
-            <input
-              class="form-control"
-              type="password"
-              id="password"
-              required
-            />
-            <div class="invalid-feedback">Introduzca su contraseña</div>
-          </div>
-          <div class="form-group form-check">
-            <input class="form-check-input" type="checkbox" id="check" />
-            <label class="form-check-label text-start" for="check"
-              >Recuérdame</label
-            >
-            <div>
-              <a href="#">He olvidado mi contraseña</a>
-            </div>
-          </div>
+    <div class="sesion-control">
+      <form class="registro row g-3 bg-light">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="fw-bolder form-label was-validated"
+            >Email</label
+          >
+          <input type="email" class="form-control" id="inputEmail4" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="fw-bolder form-label was-validated"
+            >Contraseña</label
+          >
+          <input type="password" class="form-control" id="inputPassword4" />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label fw-bolder"
+            >Dirección</label
+          >
           <input
-            class="btn btn-success w-100 shadow"
-            type="submit"
-            value="INICIO DE SESIÓN"
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="1234 Main St"
           />
-        </form>
-      </div>
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label fw-bolder"
+            >Dirección complementaria (Opcional)</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Apartment, studio, or floor"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label fw-bolder">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label fw-bolder">Estado</label>
+          <select id="inputState" class="form-select">
+            <option selected>Elegir...</option>
+            <option>Nueva Esparta</option>
+            <option>Portuguesa</option>
+            <option>Mérida</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label fw-bolder">Postal</label>
+          <input type="text" class="form-control" id="inputZip" />
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-outline-success">
+            Registrar
+          </button>
+        </div>
+      </form>
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script

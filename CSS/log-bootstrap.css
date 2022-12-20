@@ -1,0 +1,66 @@
+.body-loguin {
+  background-image: linear-gradient(
+      to right,
+      rgba(189, 195, 199, 0),
+      rgba(44, 62, 80, 0.295)
+    ),
+    url("../img/fondoServi3.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 0.1px;
+  position: relative;
+}
+
+.body-registro {
+  background-image: linear-gradient(
+      to right,
+      rgba(189, 195, 199, 0),
+      rgba(44, 62, 80, 0.295)
+    ),
+    url("../img/fondoServi9.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 0.1px;
+  position: relative;
+}
+
+.sesion-control {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  width: 360px;
+  height: min-content;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.registro {
+  width: 800px;
+  height: min-content;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffacac;
+}
+
+.login h1 {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+}
+
+.login form {
+  font-size: 20px;
+}
+
+.login form .form-group {
+  margin-bottom: 12px;
+}
+
+.login form input[type="submit"] {
+  font-size: 20px;
+  margin-top: 15px;
+}

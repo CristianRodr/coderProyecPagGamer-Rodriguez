@@ -95,6 +95,7 @@
 
 @media (max-width: 962px) {
   .nav {
+    z-index: 1;
     position: fixed;
     width: 100%;
     display: block;
@@ -113,7 +114,7 @@
   .nav__menu {
     position: fixed;
     top: 70px;
-    bottom: 0;
+    bottom: 0px;
     background: linear-gradient(to right, #f0f2f0, #363b53);
     width: 100%;
     left: 0;

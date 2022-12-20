@@ -10,16 +10,6 @@
   }
 }
 
-@media screen and (max-width: 963px) {
-  .headline {
-  }
-}
-
-@media screen and (max-width: 963px) {
-  .heading {
-  }
-}
-
 /* ===home: MediaQuery seccion about=== */
 @media screen and (max-width: 768px) {
   .about__secciones {
@@ -738,7 +728,11 @@
 /* ------------------------------------------ */
 /* ------query de la pagina Servicios------- */
 /* ---------------------------------------- */
-
+@media screen and (max-width: 1309px) {
+  .service__pie--pading1 {
+    padding-top: 38px;
+  }
+}
 @media screen and (max-width: 1303px) {
   .servione {
     grid-area: servione;
@@ -823,6 +817,13 @@
   .services__encabezado {
     margin-bottom: 2px;
   }
+
+  .service__pie--pading1 {
+    padding-top: 34px;
+  }
+}
+
+@media screen and (max-width: 1299px) {
 }
 
 @media screen and (max-width: 1262px) {
@@ -841,6 +842,12 @@
   .services__encabezado {
     margin-bottom: 0px;
     padding-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .service__pie--pading1 {
+    padding-top: 35px;
   }
 }
 
@@ -928,6 +935,10 @@
   .services__encabezado {
     margin-bottom: 44px;
   }
+
+  .service__pie--pading1 {
+    padding-top: 25px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1012,9 +1023,15 @@
   }
 }
 
+@media screen and (max-width: 990px) {
+  .service__pie--pading1 {
+    padding-top: 19px;
+  }
+}
+
 @media screen and (max-width: 836px) {
   .services__encabezado {
-    margin-bottom: 0px;
+    margin-bottom: 4px;
   }
 
   .btn-buy {
@@ -1034,6 +1051,12 @@
 
   .nuestros__mintitle {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 797px) {
+  .service__pie--pading1 {
+    padding-top: 0px;
   }
 }
 
@@ -1169,6 +1192,12 @@
 
   .nuestros__paragrafo {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .services__pie {
+    padding-top: 16px;
   }
 }
 
